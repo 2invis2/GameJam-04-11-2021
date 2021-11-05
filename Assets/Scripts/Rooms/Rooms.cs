@@ -1,47 +1,49 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-public class Rooms : MonoBehaviour
+
+namespace Rooms
 {
-    private List<Tilemap> roomsTilemaps;
-
-    private void Awake()
+    public class Rooms : MonoBehaviour
     {
-        roomsTilemaps = new List<Tilemap>();
-        for (var i = 0; i < transform.childCount; i++)
+        private static List<Tilemap> roomsTilemaps;
+
+        private void Awake()
         {
-            if (transform.GetChild(i).TryGetComponent(out Tilemap tm))
+            roomsTilemaps = new List<Tilemap>();
+            for (var i = 0; i < transform.childCount; i++)
             {
-                roomsTilemaps.Add(tm);
+                if (transform.GetChild(i).TryGetComponent(out Tilemap tm))
+                {
+                    roomsTilemaps.Add(tm);
+                }
             }
         }
-    }
 
-    public string GetRoomName(Vector3 coords)
-    {
-        string ans = null;
-        foreach (Tilemap tm in roomsTilemaps)
+        public static string GetRoomName(Vector3 coords)
         {
-            if (tm.GetTile(tm.WorldToCell(coords)) != null)
+            string ans = null;
+            foreach (Tilemap tm in roomsTilemaps)
             {
-                ans = tm.gameObject.name;
-                break;
+                if (tm.GetTile(tm.WorldToCell(coords)) != null)
+                {
+                    ans = tm.gameObject.name;
+                    break;
+                }
+
             }
 
+            return ans;
         }
-
-        return ans;
-    }
     
-    public string GetRoomName(GameObject obj)
-    {
-        return GetRoomName(obj.transform);
-    }
+        public static string GetRoomName(GameObject obj)
+        {
+            return GetRoomName(obj.transform);
+        }
     
-    public string GetRoomName(Transform tr)
-    {
-        return GetRoomName(tr.position);
+        public static string GetRoomName(Transform tr)
+        {
+            return GetRoomName(tr.position);
+        }
     }
 }
