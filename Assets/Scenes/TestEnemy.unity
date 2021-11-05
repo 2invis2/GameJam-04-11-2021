@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 441339595}
   - component: {fileID: 441339594}
   - component: {fileID: 441339593}
+  - component: {fileID: 441339598}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -337,6 +338,7 @@ MonoBehaviour:
   subjectiveDir: {fileID: 1544866539}
   moveSpeed: 5
   turnSpeed: 1
+  detector: {fileID: 441339598}
   target: {fileID: 794054402}
 --- !u!58 &441339594
 CircleCollider2D:
@@ -441,6 +443,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441339598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441339592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f15b6a5fc1add94992b3f670a3e7c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  tagToDetect: 
 --- !u!1 &499846101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1540,7 @@ MonoBehaviour:
   subjectiveDir: {fileID: 2069730898}
   moveSpeed: 5
   turnSpeed: 1
+  detector: {fileID: 0}
   target: {fileID: 794054402}
 --- !u!58 &1184103006
 CircleCollider2D:
@@ -1652,7 +1669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189911107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 2.63, z: 0}
+  m_LocalPosition: {x: 2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3774,7 +3791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855150982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 2.63, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3804,7 +3821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913415431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: 4.56, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3825,7 +3842,7 @@ GameObject:
   - component: {fileID: 1940750170}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

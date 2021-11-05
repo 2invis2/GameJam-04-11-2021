@@ -12,6 +12,7 @@ public class EnemyBase : MonoBehaviour
     static readonly Vector3 globalForward = Vector3.forward;
     [SerializeField] EnemyBehavourType behavourType = EnemyBehavourType.TurnThenMove;
     [SerializeField] Rigidbody2D rigidbodySelf;
+    #region movementfields
     [SerializeField] Transform subjectiveDir;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float turnSpeed = 1f;
@@ -19,13 +20,23 @@ public class EnemyBase : MonoBehaviour
     const float distSmall = 0.01f; // this is actually square of that distance
     const float distEpsilon = 0.001f;
     const float angleEpsilon = 1f;
+    #endregion
+    #region detectionfelds
+    [SerializeField] DetectorComponent detector;
+    #endregion
     public UnityAction<EnemyBase> OnTargetReached;
+    public UnityAction<EnemyBase> OnPlayerNoticed;
 
     [SerializeField] Transform target;
     public Transform Target { get => target;}
     private void Awake()
     {
         if (rigidbodySelf == null) rigidbodySelf = gameObject.GetComponent<Rigidbody2D>();
+    }
+    private void Start()
+    {
+        if (detector == null) detector = GetComponent<DetectorComponent>();
+        if (detector != null) { SetDetection("Player", DetectionResult); }
     }
     private void Update()
     {
@@ -50,9 +61,25 @@ public class EnemyBase : MonoBehaviour
             default:
                 Stop();
                 break;
-        }
-        
+        }   
     }
+    #region Detection
+    public void SetDetection(string tag, UnityAction<List<GameObject>> action) {
+        if (detector == null) {
+            detector = gameObject.GetComponent<DetectorComponent>();
+            if (detector == null) detector = gameObject.AddComponent<DetectorComponent>();
+        }
+        detector.SetTagToDetect(tag);
+        detector.OnDetection = action;
+    }
+    protected virtual void DetectionResult(List<GameObject> foundObjects) {
+        //hardcoded right now
+#if UNITY_EDITOR
+        for (int i = 0; i < foundObjects.Count; i++) Debug.DrawLine(transform.position, foundObjects[i].transform.position,Color.red);
+#endif
+    }
+    #endregion
+    #region BasicMovement
     void TurnAndMoveDirectlyToPoint(Vector2 point)
     {
         Vector2 direction = point - (Vector2)transform.position;
@@ -90,9 +117,6 @@ public class EnemyBase : MonoBehaviour
         if (Vector2.Angle(subjectiveDir.up, direction) > angleEpsilon) {
             Stop();
             TurnToDir(direction);
-//#if UNITY_EDITOR
-//            Debug.DrawLine(transform.position, transform.position + Vector3.up, Color.red);
-//#endif
         }
         else
         {
@@ -127,9 +151,7 @@ public class EnemyBase : MonoBehaviour
         if (Vector2.Angle(subjectiveDir.up, direction) < float.Epsilon) return;
         subjectiveDir.LookAt(subjectiveDir.position + Vector3.forward, direction);
     }
-    //Vector3 Rotate2D(Vector3 vector, float angle) { 
-    //    subjectiveDir.Rot
-    //}
+    #endregion
     public void SetTarget(Transform newTarget) {
         target = newTarget;
     }
