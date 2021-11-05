@@ -6,9 +6,17 @@ namespace Attack
     [Serializable]
     public struct Attack
     {
-        [SerializeField] private AttackType attackType;
-        [SerializeField] private string projectile;
-        [SerializeField] private float range;
-        [SerializeField] private bool isEnable;
+        public AttackType attackType;
+        public GameObject projectile;
+        public float range;
+        public bool isEnable;
+        
+        public Attack(AttackType attackType, GameObject projectile, float range, bool isEnable)
+        {
+            this.attackType = attackType;
+            this.projectile = projectile;
+            this.range = range;
+            this.isEnable = isEnable;
+        }
     }
 }
