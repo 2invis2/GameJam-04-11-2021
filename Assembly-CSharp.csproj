@@ -53,9 +53,11 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GameLogic.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Logic\InputManager.cs" />
+    <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Core\Interfaces\Generic\ComponentSingleton.cs" />
+    <Compile Include="Assets\Core\Interfaces\Generic\MonoBehaviourSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -736,6 +738,14 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
       <Project>{22381579-739C-26F2-7863-44C27479DA56}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{B965E789-2C47-C531-1DEE-1F4E022705FD}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{6498BBA1-998F-0395-085F-BE86767A721A}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

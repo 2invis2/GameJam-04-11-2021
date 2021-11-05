@@ -5,7 +5,7 @@ namespace MurphyInc.Core.Interfaces.Generic
     public class ComponentSingleton<T> 
         : Component where T : Component
     {
-        private static readonly object _lock = new();
+        private static readonly object _lock = new object();
         private static T instance;
 
         public static T Instance
@@ -14,7 +14,8 @@ namespace MurphyInc.Core.Interfaces.Generic
             {
                 lock (_lock)
                 {
-                    instance ??= FindObjectOfType<T>();
+                    if(instance == null)
+                        instance = FindObjectOfType<T>();
 
                     if (instance == null)
                     {
