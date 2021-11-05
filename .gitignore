@@ -75,3 +75,4 @@ crashlytics-build.properties
 /Unity.2D.Tilemap.Extras.csproj
 /Unity.2D.Tilemap.Extras.Editor.csproj
 /Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj
+*.sln
