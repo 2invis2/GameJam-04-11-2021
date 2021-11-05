@@ -20,11 +20,11 @@ public class EnemyDirector : MonoBehaviour
         if (npc == null) return;
         if (route == null) {
             npc.SetTarget(null);
-            npc.OnTargetReached = default;
+            npc.OnMovementTargetReached = default;
             return;
         }
-        npc.SetTarget(route.GetNextPoint(npc.Target));
-        npc.OnTargetReached = GiveNextTarget;
+        npc.SetTarget(route.GetNextPoint(npc.MovementTarget));
+        npc.OnMovementTargetReached = GiveNextTarget;
     }
     void GiveNextTarget(EnemyBase npc) {
         //Debug.Log("trying to give new point...");
@@ -32,7 +32,7 @@ public class EnemyDirector : MonoBehaviour
         for (npcIndex = 0; npcIndex < control.Count; npcIndex++) if (control[npcIndex].npc == npc) break;
         if (npcIndex < control.Count)
         {
-            npc.SetTarget(control[npcIndex].route.GetNextPoint(npc.Target));
+            npc.SetTarget(control[npcIndex].route.GetNextPoint(npc.MovementTarget));
         }
         else {
             Debug.Log("No next point for " + npc.gameObject.name);
