@@ -313,6 +313,8 @@ GameObject:
   - component: {fileID: 441339595}
   - component: {fileID: 441339594}
   - component: {fileID: 441339593}
+  - component: {fileID: 441339598}
+  - component: {fileID: 441339599}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -332,12 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddecf790a5dac0049a07d0bd66a25543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavourType: 2
-  rigidbodySelf: {fileID: 0}
-  subjectiveDir: {fileID: 1544866539}
-  moveSpeed: 5
-  turnSpeed: 1
-  target: {fileID: 794054402}
+  detector: {fileID: 441339598}
+  movement: {fileID: 0}
 --- !u!58 &441339594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -441,6 +439,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441339598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441339592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f15b6a5fc1add94992b3f670a3e7c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  tagToDetect: 
+--- !u!114 &441339599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441339592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf9135b405ff894cb267ad63868d719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behavourType: 2
+  rigidbodySelf: {fileID: 0}
+  subjectiveDir: {fileID: 1544866539}
+  moveSpeed: 5
+  turnSpeed: 1
+  target: {fileID: 0}
 --- !u!1 &499846101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1530,7 @@ GameObject:
   - component: {fileID: 1184103007}
   - component: {fileID: 1184103006}
   - component: {fileID: 1184103005}
+  - component: {fileID: 1184103010}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1519,12 +1550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddecf790a5dac0049a07d0bd66a25543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavourType: 1
-  rigidbodySelf: {fileID: 0}
-  subjectiveDir: {fileID: 2069730898}
-  moveSpeed: 5
-  turnSpeed: 1
-  target: {fileID: 794054402}
+  detector: {fileID: 0}
+  movement: {fileID: 0}
 --- !u!58 &1184103006
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1628,6 +1655,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184103010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184103004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf9135b405ff894cb267ad63868d719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behavourType: 2
+  rigidbodySelf: {fileID: 0}
+  subjectiveDir: {fileID: 2069730898}
+  moveSpeed: 5
+  turnSpeed: 1
+  target: {fileID: 0}
 --- !u!1 &1189911107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189911107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 2.63, z: 0}
+  m_LocalPosition: {x: 2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3774,7 +3819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855150982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 2.63, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3804,7 +3849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913415431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: 4.56, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 214840475}
@@ -3825,7 +3870,7 @@ GameObject:
   - component: {fileID: 1940750170}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
