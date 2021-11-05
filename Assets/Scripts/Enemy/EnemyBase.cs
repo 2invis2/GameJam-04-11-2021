@@ -1,3 +1,4 @@
+#define TELEPORT_IF_CLOSE
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,8 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float turnSpeed = 1f;
     const float turnCoeff = 180f;
-    const float distSmall = 0.1f; // this is actually square of that distance
-    const float distEpsilon = 0.01f;
+    const float distSmall = 0.01f; // this is actually square of that distance
+    const float distEpsilon = 0.001f;
     const float angleEpsilon = 1f;
     public UnityAction<EnemyBase> OnTargetReached;
 
@@ -46,6 +47,9 @@ public class EnemyBase : MonoBehaviour
                 if (target != null) TurnThenMoveToPoint(target.position);
                 else Stop();
                 break;
+            default:
+                Stop();
+                break;
         }
         
     }
@@ -55,6 +59,9 @@ public class EnemyBase : MonoBehaviour
         var distSqr = direction.sqrMagnitude;
         if (distSqr < distEpsilon)
         {
+#if TELEPORT_IF_CLOSE
+            transform.SetPositionAndRotation(point,transform.rotation);
+#endif
             OnTargetReached(this);
             return;
         }//don't move to zero-vector direction
@@ -72,7 +79,11 @@ public class EnemyBase : MonoBehaviour
     {
         Vector2 direction = point - (Vector2)transform.position;
         var distSqr = direction.sqrMagnitude;
-        if (distSqr < float.Epsilon) {
+        if (distSqr < distEpsilon)
+        {
+#if TELEPORT_IF_CLOSE
+            transform.SetPositionAndRotation(point, transform.rotation);
+#endif
             OnTargetReached(this); 
             return;
         }//don't move to zero-vector direction
@@ -93,7 +104,7 @@ public class EnemyBase : MonoBehaviour
             OnTargetReached(this);
             return 0f;
         }
-        var speed = Mathf.Min(direction.magnitude * moveSpeed, moveSpeed);// * Mathf.Cos(Vector2.Angle(subjectiveDir.up, direction));
+        var speed = Mathf.Min(direction.magnitude * moveSpeed * 5f, moveSpeed);// * Mathf.Cos(Vector2.Angle(subjectiveDir.up, direction));
         rigidbodySelf.velocity = speed * subjectiveDir.up;
         return speed;
     }
