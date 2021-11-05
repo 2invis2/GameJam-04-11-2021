@@ -1,3 +1,5 @@
+using Assets.Scripts.FeatureStorages;
+using MurphyInc.Core.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +11,12 @@ public class EnemyDirector : MonoBehaviour
     {
         for (int i = 0; i < control.Count; i++) SetupNpcOnRoute(control[i].npc, control[i].route);
     }
+
+    private void Update()
+    {
+        FeatureStorageEnemy.RandVelocity.InvokeIsEnable();
+    }
+
     public void MoveNPCByRoute(EnemyBase npc, NPCRoute route) {
         if (npc == null) return;
         var controlIndex = control.FindIndex((con) => { return con.npc == npc; });

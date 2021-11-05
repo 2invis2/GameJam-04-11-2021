@@ -29,10 +29,7 @@ namespace Assets.Scripts.FeatureStorages
 
             var actions = new[]
             {
-                new ActionFeature(name: "", description: "", isEnable: true),
-                new ActionFeature(name: "", description: "", isEnable: false),
-                new ActionFeature(name: "", description: "", isEnable: false),
-                new ActionFeature(name: "", description: "", isEnable: true),
+                 RandVelocity
             };
 
             instance = new FeatureStorage(settings, actions);
@@ -44,5 +41,13 @@ namespace Assets.Scripts.FeatureStorages
 
         public static IEnumerable<SettingsFeature> Settings => instance.Settings;
         public static IEnumerable<ActionFeature> Actions => instance.Actions;
+
+        public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: true);
+
+        public enum BaseEnemyFeatures
+        {
+            RAND_VELOCITY,
+
+        }
     }
 }

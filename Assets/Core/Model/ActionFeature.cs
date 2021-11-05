@@ -15,7 +15,7 @@ namespace MurphyInc.Core.Model
         {
             if (IsEnable)
             {
-                Action.Invoke();
+                Action?.Invoke();
             }
         }
     }

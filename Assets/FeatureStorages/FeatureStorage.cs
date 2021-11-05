@@ -16,16 +16,6 @@ namespace Assets.Scripts.FeatureStorages
         public IEnumerable<SettingsFeature> Settings => _settings;
         public IEnumerable<ActionFeature> Actions => _actions;
 
-        public TFeature GetByName<TFeature>(string name) where TFeature : BaseFeature
-        {
-            if (typeof(TFeature).Equals(typeof(SettingsFeature)))
-                return _settings.SingleOrDefault(x => x.Name == name) as TFeature;
-            if (typeof(TFeature).Equals(typeof(ActionFeature)))
-                return _settings.SingleOrDefault(x => x.Name == name) as TFeature;
-
-            return null;
-        }
-
         private readonly HashSet<SettingsFeature> _settings;
         private readonly HashSet<ActionFeature> _actions;
     }

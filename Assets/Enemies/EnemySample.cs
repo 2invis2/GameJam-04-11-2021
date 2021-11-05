@@ -1,31 +1,33 @@
 ﻿using Assets.Scripts.FeatureStorages;
-using MurphyInc.Core.Model;
 using System;
 using UnityEngine;
 
 namespace Enemies
 {
-    public class BaseEnemy : MonoBehaviour
+    public class BaseEnemySample : MonoBehaviour
     {
         protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
-
-        public BaseEnemy()
+        protected virtual void Start()
         {
-            featureStorage.GetByName<ActionFeature>("someAction").Action += OnSampleAction;
+            ActionFeatureInit();
         }
 
-        private void OnSampleAction()
+        private void ActionFeatureInit()
+        {
+            FeatureStorageEnemy.RandVelocity.Action += OnEnableRandVelocity;
+        }
+
+        private void OnEnableRandVelocity()
         {
             throw new NotImplementedException();
         }
     }
 
-    public class SampleEnemy : BaseEnemy
+    public class SomeDerector : MonoBehaviour
     {
-        void ToDoSomething()
+        private void Update()
         {
-            featureStorage.GetByName<ActionFeature>("someAction").InvokeIsEnable();
+            FeatureStorageEnemy.RandVelocity.InvokeIsEnable();
         }
     }
-
 }

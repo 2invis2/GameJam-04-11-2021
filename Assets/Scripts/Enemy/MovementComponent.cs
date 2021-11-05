@@ -1,3 +1,5 @@
+using Assets.Scripts.FeatureStorages;
+using MurphyInc.Core.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +55,13 @@ public class MovementComponent : MonoBehaviour
                 break;
         }
     }
+
+    public float MoveSpeed
+    {
+        get => moveSpeed;
+        set => moveSpeed = value;
+    }
+
     #region BasicMovement
     void TurnAndMoveDirectlyToPoint(Vector2 point)
     {
@@ -105,6 +114,7 @@ public class MovementComponent : MonoBehaviour
             OnTargetReached();
             return 0f;
         }
+
         var speed = Mathf.Min(direction.magnitude * moveSpeed * 5f, moveSpeed);// * Mathf.Cos(Vector2.Angle(subjectiveDir.up, direction));
         rigidbodySelf.velocity = speed * subjectiveDir.up;
         return speed;

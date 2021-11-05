@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Assets.Scripts.FeatureStorages;
+using MurphyInc.Core.Model;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -12,13 +14,28 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] DetectorComponent detector;
     [SerializeField] MovementComponent movement;
 
+    protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
+
     public Transform MovementTarget => movement ? movement.Target : null;
     public UnityAction<EnemyBase> OnMovementTargetReached;
 
     protected virtual void Start()
     {
         Init();
+        ActionFeatureInit();
     }
+
+    private void ActionFeatureInit()
+    {
+        FeatureStorageEnemy.RandVelocity.Action += OnEnableRandVelocity;
+    }
+
+    private void OnEnableRandVelocity()
+    {
+        var rnd = Random.Range(0, 8);
+        movement.MoveSpeed = movement.MoveSpeed * 0.4f + rnd * 0.6f;
+    }
+
     protected virtual void Init()
     {
         if (detector == null) detector = GetComponent<DetectorComponent>();
@@ -26,6 +43,7 @@ public class EnemyBase : MonoBehaviour
         if (movement == null) movement = GetComponent<MovementComponent>();
         if (movement != null) { movement.OnTargetReached = MovementCompleteResult; }
     }
+
     #region Movement
     protected virtual void MovementCompleteResult() {
         OnMovementTargetReached(this);
