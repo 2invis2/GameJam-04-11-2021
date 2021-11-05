@@ -9,6 +9,7 @@ public class Rooms : MonoBehaviour
 
     private void Awake()
     {
+        roomsTilemaps = new List<Tilemap>();
         for (var i = 0; i < transform.childCount; i++)
         {
             if (transform.GetChild(i).TryGetComponent(out Tilemap tm))
