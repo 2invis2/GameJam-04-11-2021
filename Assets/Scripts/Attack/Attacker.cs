@@ -8,14 +8,26 @@ namespace Attack
     {
         public List<Attack> attacks;
 
+        public void Attack(Vector2 direction) {
+            Attack(attacks, direction);
+        }
         public void Attack(List<Attack> attacks)
         {
             CreateProjectile(attacks.Find(x => x.isEnable));
+        }
+        public void Attack(List<Attack> attacks, Vector2 direction)
+        {
+            CreateProjectile(attacks.Find(x => x.isEnable), direction);
         }
 
         private void CreateProjectile(Attack attack)
         {
             Instantiate(attack.projectile, transform.position, transform.rotation);
+        }
+        private void CreateProjectile(Attack attack, Vector2 direction)
+        {
+            var projectile = Instantiate(attack.projectile, transform.position, transform.rotation);
+            projectile.transform.LookAt(projectile.transform.position + Vector3.forward, direction);
         }
     }
 }
