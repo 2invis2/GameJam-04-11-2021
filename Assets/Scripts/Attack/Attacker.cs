@@ -4,30 +4,36 @@ using UnityEngine;
 
 namespace Attack
 {
-    public class Attacker : MonoBehaviour, IAttacker
+    public class Attacker : MonoBehaviour//, IAttacker
     {
         public List<Attack> attacks;
 
-        public void Attack(Vector2 direction) {
-            Attack(attacks, direction);
+        public void Attack(Vector2 position) {
+            Attack(attacks, position);
         }
-        public void Attack(List<Attack> attacks)
+        public void Attack(List<Attack> attacks, Vector2 position)
         {
-            CreateProjectile(attacks.Find(x => x.isEnable));
-        }
-        public void Attack(List<Attack> attacks, Vector2 direction)
-        {
-            CreateProjectile(attacks.Find(x => x.isEnable), direction);
+            ResolveAttack(attacks.Find(x => x.isEnable), position);
         }
 
-        private void CreateProjectile(Attack attack)
-        {
-            Instantiate(attack.projectile, transform.position, transform.rotation);
+        private void ResolveAttack(Attack attack, Vector2 position) {
+            switch (attack.form) {
+                case AttackForm.Projectile:
+                    CreateProjectile(attack, position);
+                    break;
+                case AttackForm.DelayedExplosionAtPoint:
+
+                    break;
+                default:
+                    Debug.LogWarning("Tried to do unknown attack form: " + attack.form.ToString());
+                    break;
+            }
         }
-        private void CreateProjectile(Attack attack, Vector2 direction)
+
+        private void CreateProjectile(Attack attack, Vector2 position)
         {
             var projectile = Instantiate(attack.projectile, transform.position, transform.rotation);
-            projectile.transform.LookAt(projectile.transform.position + Vector3.forward, direction);
+            projectile.transform.LookAt(projectile.transform.position + Vector3.forward, position - (Vector2)transform.position);
         }
     }
 }

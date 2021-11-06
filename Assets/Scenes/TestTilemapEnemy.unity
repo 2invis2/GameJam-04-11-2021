@@ -601,17 +601,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 835125155597019714, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
-      propertyPath: behavourType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 835125155597019717, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: m_Name
       value: EnemyWalksRouteShootsPlayer Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 835125155597019717, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
@@ -899,6 +891,10 @@ PrefabInstance:
     - target: {fileID: 1042779928957506420, guid: 2a07052ecf880de4ba81fcfb1d2fd02e, type: 3}
       propertyPath: m_Name
       value: EnemyChaser Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042779928957506420, guid: 2a07052ecf880de4ba81fcfb1d2fd02e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a07052ecf880de4ba81fcfb1d2fd02e, type: 3}

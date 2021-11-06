@@ -1,6 +1,10 @@
-public enum AttackForm
+namespace Attack
 {
-    Projectile,
-    Hitscan,
-    DelayedExplosionAtPoint
+    public enum AttackForm
+    {
+        Unknown,
+        Projectile,
+        Hitscan,
+        DelayedExplosionAtPoint
+    }
 }
