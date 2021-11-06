@@ -1,9 +1,10 @@
 ﻿using System;
 using MurphyInc.Core.Model.Interfaces;
+using System;
 
 namespace MurphyInc.Core.Model
 {
-    public class BaseFeature : IFeature 
+    public class BaseFeature : IFeature
     {
 
         public BaseFeature(string name, string description, bool isEnable = false)
@@ -16,7 +17,8 @@ namespace MurphyInc.Core.Model
         /// <summary>
         /// Включено ли правило
         /// </summary>
-        public bool IsEnable { 
+        public bool IsEnable
+        {
             get
             {
                 return _isEnable;
@@ -27,6 +29,20 @@ namespace MurphyInc.Core.Model
                 callback?.Invoke();
             }
         }
+
+        /// <summary>
+        /// Доступно ли правило
+        /// </summary>
+        public bool IsAvailable
+        {
+            get
+            {
+                if (availableEvent != null)
+                    return true;
+                return availableEvent();
+            }
+        }
+
 
         /// <summary>
         /// Имя свойства
@@ -41,9 +57,10 @@ namespace MurphyInc.Core.Model
         public override int GetHashCode() => Name.GetHashCode();
 
         public event Action callback;
+        private readonly Func<bool> availableEvent;
         private readonly string _name;
         private readonly string _description;
         private bool _isEnable;
-        
+
     }
 }
