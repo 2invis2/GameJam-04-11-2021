@@ -54,7 +54,7 @@ ExportedObj/
 *.pdb.meta
 *.mdb.meta
 *.cs.meta
-**/Scripts/**/*.meta
+**/Assets/**/*.meta
 **/Core/**/*.meta
 
 # Unity3D generated file on crash reports
