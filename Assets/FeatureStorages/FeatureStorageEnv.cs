@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,36 +13,34 @@ using UnityEngine;
 namespace Assets.Scripts.FeatureStorages
 {
 
-    public sealed class FeatureStorageEnemy
+    public sealed class FeatureStorageEnv
     {
         private static readonly FeatureStorage instance;
 
-        static FeatureStorageEnemy()
+        static FeatureStorageEnv()
         {
             var settings = new[]
             {
-                new SettingsFeature(name: "", description: "", isEnable: true),
                 new SettingsFeature(name: "", description: "", isEnable: false),
-                new SettingsFeature(name: "", description: "", isEnable: false),
-                new SettingsFeature(name: "", description: "", isEnable: true),
             };
 
             var actions = new[]
             {
-                 RandVelocity
+                SlidingTables
             };
 
             instance = new FeatureStorage(settings, actions);
         }
 
-        private FeatureStorageEnemy() { }
+        private FeatureStorageEnv() { }
 
         public static FeatureStorage Instance => instance;
 
         public static IEnumerable<SettingsFeature> Settings => instance.Settings;
         public static IEnumerable<ActionFeature> Actions => instance.Actions;
 
-        public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: true);
-        
+        public static readonly ActionFeature SlidingTables = new ActionFeature(name: nameof(SlidingTables), description: "Столы скользят по полу", isEnable: false);
+        public static readonly ActionFeature LesserFOV = new ActionFeature(name: nameof(LesserFOV), description: "Плохая видимость", isEnable: false);
+        public static readonly ActionFeature BiggerFOV = new ActionFeature(name: nameof(BiggerFOV), description: "Хорошая видимость", isEnable: false);
     }
 }

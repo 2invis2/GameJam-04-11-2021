@@ -1,4 +1,5 @@
-﻿using MurphyInc.Core.Model.Interfaces;
+﻿using System;
+using MurphyInc.Core.Model.Interfaces;
 
 namespace MurphyInc.Core.Model
 {
@@ -15,7 +16,17 @@ namespace MurphyInc.Core.Model
         /// <summary>
         /// Включено ли правило
         /// </summary>
-        public bool IsEnable { get; set; }
+        public bool IsEnable { 
+            get
+            {
+                return _isEnable;
+            }
+            set
+            {
+                _isEnable = value;
+                callback?.Invoke();
+            }
+        }
 
         /// <summary>
         /// Имя свойства
@@ -29,7 +40,10 @@ namespace MurphyInc.Core.Model
 
         public override int GetHashCode() => Name.GetHashCode();
 
+        public event Action callback;
         private readonly string _name;
         private readonly string _description;
+        private bool _isEnable;
+        
     }
 }
