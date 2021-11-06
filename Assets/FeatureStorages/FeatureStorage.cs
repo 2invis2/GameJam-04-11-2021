@@ -15,12 +15,15 @@ namespace Assets.Scripts.FeatureStorages
                 .ToDictionary(x => x.Name, value => value);
         }
 
-        public void AddActionFeature(ActionFeature actionFeature)
+        public bool TryAddActionFeature(ActionFeature actionFeature)
         {
             if (_features.ContainsKey(actionFeature.Name))
-                throw new Exception("Закон с таким именем уже добавлен!");
+                return false;
             _features.Add(actionFeature.Name, actionFeature);
+            return true;
         }
+
+        public bool Contains(ActionFeature actionFeature) => _features.ContainsKey(actionFeature.Name);
 
         public ActionFeature GetByName(string name)
         {

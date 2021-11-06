@@ -29,15 +29,13 @@ namespace Assets.Scripts.FeatureStorages
                 ToiletNoMagic
             };
 
-            instance = new FeatureStorage(settings, actions);
+            instance = new FeatureStorage(actions);
         }
 
         private FeatureStorageRooms() { }
 
         public static FeatureStorage Instance => instance;
-
-        public static IEnumerable<SettingsFeature> Settings => instance.Settings;
-        public static IEnumerable<ActionFeature> Actions => instance.Actions;
+        public static IEnumerable<ActionFeature> Features => instance.Features;
 
         public static readonly ActionFeature ToiletNoMagic = new ActionFeature(name: nameof(ToiletNoMagic), description: "Запрет на магию в туалетах", isEnable: false);
         public static readonly ActionFeature ChillNoMelee = new ActionFeature(name: nameof(ChillNoMelee), description: "Запрет на драки в комнате отдыха", isEnable: true);

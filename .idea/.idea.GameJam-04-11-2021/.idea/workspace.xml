@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_11_2021_18_37__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_11_2021_18_37__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomWhereat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomWhereat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDirector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReserveRoutes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/Attack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,24 +51,23 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemySample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/BaseFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DetectorComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/RoomsRestrictions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/RoomsRestrictions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/InputManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" />
       <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs" />
@@ -79,9 +80,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Attack/Attacker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/ProjectileMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomWhereat.cs" />
-      <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Attack/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomsRestrictions.cs" />
+      <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
+      <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ReserveRoutes.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20TGszwM6QxJEvebrpTb56wcygI" />

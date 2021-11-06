@@ -1,6 +1,7 @@
 #define TELEPORT_IF_CLOSE
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using Assets.Scripts.FeatureStorages;
@@ -15,6 +16,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] protected MovementComponent movement;
 
     protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
+    protected FeatureStorage featureStorageRooms = FeatureStorageRooms.Instance;
 
     public Transform MovementTarget => movement ? movement.Target : null;
     public UnityAction<EnemyBase> OnMovementTargetReached = delegate { };
@@ -22,6 +24,7 @@ public class EnemyBase : MonoBehaviour
     protected virtual void Start()
     {
         Init();
+        AddActionFeatures();
         //ActionFeatureInit();
     }
 
@@ -92,5 +95,23 @@ public class EnemyBase : MonoBehaviour
     {
         if (movement == null) movement = GetComponent<MovementComponent>();
         if (detector == null) detector = GetComponent<DetectorComponent>();
+    }
+
+    private void AddActionFeatures()
+    {
+        foreach (var item in Rooms.Rooms.roomsDictionary)
+        {
+            var newActionFeature = new ActionFeature("RestrictedAccess"+item.Key, "Врагам не доступна комната "+item.Value, false, new string[]{item.Key});
+            newActionFeature.callback += OnRestrictedAccessCallback;
+            featureStorageRooms.TryAddActionFeature(newActionFeature);
+        }
+    }
+
+    private void OnRestrictedAccessCallback(string[] parametersAction)
+    {
+        if (Rooms.Rooms.roomsDictionary.Keys.Contains(parametersAction[0]))
+        {
+            ReserveRoutes.SetReserveRoute(this);
+        }
     }
 }
