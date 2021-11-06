@@ -8,12 +8,10 @@ namespace Rooms
     {
         [SerializeField] private string roomName;
         [SerializeField] private float updateRatio;
-        [SerializeField] private RoomsRestrictions _restrictions;
 
         private void Awake()
         {
             Invoke(nameof(SetNewRoomValue), updateRatio);
-            _restrictions = GetComponent<RoomsRestrictions>();
         }
 
         public void CheckRoomChange()
@@ -34,7 +32,6 @@ namespace Rooms
         private void SetNewRoomValue()
         {
             roomName = Rooms.GetRoomName(transform);
-            _restrictions.OnRoomChange(roomName);
         }
 
         public string GetCurrentRoom()
