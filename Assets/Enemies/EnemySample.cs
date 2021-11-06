@@ -17,7 +17,7 @@ namespace Enemies
             FeatureStorageEnemy.RandVelocity.Action += OnEnableRandVelocity;
         }
 
-        private void OnEnableRandVelocity()
+        private void OnEnableRandVelocity(string[] @params)
         {
             throw new NotImplementedException();
         }

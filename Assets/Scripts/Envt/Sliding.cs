@@ -16,7 +16,7 @@ namespace Envt
                 FeatureStorageEnv.SlidingTables.callback += OnCallbackSlidingTables;
         }
 
-        private void OnCallbackSlidingTables()
+        private void OnCallbackSlidingTables(string[] actionParams)
         {
             isSliding = FeatureStorageEnv.SlidingTables.IsEnable;
             RbSettings(isSliding);

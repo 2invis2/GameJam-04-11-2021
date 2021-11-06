@@ -30,7 +30,7 @@ public class EnemyBase : MonoBehaviour
         FeatureStorageEnemy.RandVelocity.Action += OnEnableRandVelocity;
     }
 
-    private void OnEnableRandVelocity()
+    private void OnEnableRandVelocity(string[] actionParams)
     {
         var rnd = Random.Range(0, 8);
         movement.MoveSpeed = movement.MoveSpeed * 0.4f + rnd * 0.6f;

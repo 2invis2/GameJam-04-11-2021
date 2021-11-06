@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Assets.Scripts.FeatureStorages;
 using UnityEngine;
 
@@ -19,7 +16,7 @@ public class ChangeDetection : MonoBehaviour
         FeatureStorageEnv.BiggerFOV.callback+=OnCallbackBig;
     }
     
-    private void OnCallbackLess()
+    private void OnCallbackLess(string[] actionParams)
     {
         if (FeatureStorageEnv.LesserFOV.IsEnable)
         {
@@ -28,7 +25,7 @@ public class ChangeDetection : MonoBehaviour
         }
     }
     
-    private void OnCallbackBig()
+    private void OnCallbackBig(string[] actionParams)
     {
         if (FeatureStorageEnv.BiggerFOV.IsEnable)
         {
