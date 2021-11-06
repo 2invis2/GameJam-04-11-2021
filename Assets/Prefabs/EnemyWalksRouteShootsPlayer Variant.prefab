@@ -59,13 +59,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWalksRouteShootsPlayer Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8715581880755458470, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
 --- !u!1 &835125155597019717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8715581880755458471, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
   m_PrefabInstance: {fileID: 8315054952558427106}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5699478943596092533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4358815431344383895, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+  m_PrefabInstance: {fileID: 8315054952558427106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835125155597019717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e59a262f4e26848b59a36f12b39020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &835125155597019715 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8715581880755458465, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
@@ -77,34 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f15b6a5fc1add94992b3f670a3e7c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &835125155597019714 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8715581880755458464, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
-  m_PrefabInstance: {fileID: 8315054952558427106}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835125155597019717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7579526716794549090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835125155597019717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detector: {fileID: 835125155597019715}
-  movement: {fileID: 835125155597019714}
-  attacker: {fileID: 2724159625462818877}
-  attackCD: 1
-  attackCDLeft: 0
 --- !u!114 &2724159625462818877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +102,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacks:
-  - attackType: 0
+  - attackType: 1
     projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}
-    range: 0
+    range: 5
     isEnable: 1
+--- !u!114 &7579526716794549090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835125155597019717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector: {fileID: 835125155597019715}
+  movement: {fileID: 5699478943596092533}
+  attacker: {fileID: 2724159625462818877}
+  attackCD: 1
+  attackCDLeft: 0

@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 7595890973535605230}
   - component: {fileID: 7595890973535605231}
   - component: {fileID: 7595890973535605225}
+  - component: {fileID: 549601131878886704}
   - component: {fileID: 3660375807285749483}
   m_Layer: 0
   m_Name: Player
@@ -219,6 +220,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocityMultiplier: 5
+--- !u!114 &549601131878886704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7595890973535605226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307650c0c1f9c54c8392dac4d38a535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &3660375807285749483
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
