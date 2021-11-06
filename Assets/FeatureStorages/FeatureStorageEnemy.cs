@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Enemies;
-using MurphyInc.Core;
-using MurphyInc.Core.Interfaces.Generic;
+﻿using System.Collections.Generic;
 using MurphyInc.Core.Model;
-using MurphyInc.Core.Model.Interfaces;
-using UnityEngine;
 
 namespace Assets.Scripts.FeatureStorages
 {
@@ -19,28 +10,19 @@ namespace Assets.Scripts.FeatureStorages
 
         static FeatureStorageEnemy()
         {
-            var settings = new[]
-            {
-                new SettingsFeature(name: "", description: "", isEnable: true),
-                new SettingsFeature(name: "", description: "", isEnable: false),
-                new SettingsFeature(name: "", description: "", isEnable: false),
-                new SettingsFeature(name: "", description: "", isEnable: true),
-            };
-
-            var actions = new[]
+            var features = new[]
             {
                  RandVelocity
             };
 
-            instance = new FeatureStorage(settings, actions);
+            instance = new FeatureStorage(features);
         }
 
         private FeatureStorageEnemy() { }
 
         public static FeatureStorage Instance => instance;
 
-        public static IEnumerable<SettingsFeature> Settings => instance.Settings;
-        public static IEnumerable<ActionFeature> Actions => instance.Actions;
+        public static IEnumerable<ActionFeature> Actions => instance.Features;
 
         public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: true);
         

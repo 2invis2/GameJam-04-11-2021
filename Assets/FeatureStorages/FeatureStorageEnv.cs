@@ -19,25 +19,20 @@ namespace Assets.Scripts.FeatureStorages
 
         static FeatureStorageEnv()
         {
-            var settings = new[]
-            {
-                new SettingsFeature(name: "", description: "", isEnable: false),
-            };
-
             var actions = new[]
             {
-                SlidingTables
+                SlidingTables,
+                LesserFOV,
+                BiggerFOV
             };
 
-            instance = new FeatureStorage(settings, actions);
+            instance = new FeatureStorage(actions);
         }
 
         private FeatureStorageEnv() { }
 
         public static FeatureStorage Instance => instance;
-
-        public static IEnumerable<SettingsFeature> Settings => instance.Settings;
-        public static IEnumerable<ActionFeature> Actions => instance.Actions;
+        public static IEnumerable<ActionFeature> Actions => instance.Features;
 
         public static readonly ActionFeature SlidingTables = new ActionFeature(name: nameof(SlidingTables), description: "Столы скользят по полу", isEnable: false);
         public static readonly ActionFeature LesserFOV = new ActionFeature(name: nameof(LesserFOV), description: "Плохая видимость", isEnable: false);

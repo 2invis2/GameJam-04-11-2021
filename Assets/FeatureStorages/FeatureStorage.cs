@@ -7,16 +7,13 @@ namespace Assets.Scripts.FeatureStorages
 {
     public sealed class FeatureStorage : IFeatureStorage
     {
-        public FeatureStorage(IEnumerable<SettingsFeature> settings, IEnumerable<ActionFeature> actions)
+        public FeatureStorage(IEnumerable<ActionFeature> features)
         {
-            _settings = new HashSet<SettingsFeature>(settings);
-            _actions = new HashSet<ActionFeature>(actions);
+            _features = new HashSet<ActionFeature>(features);
         }
 
-        public IEnumerable<SettingsFeature> Settings => _settings;
-        public IEnumerable<ActionFeature> Actions => _actions;
+        public IEnumerable<ActionFeature> Features => _features;
 
-        private readonly HashSet<SettingsFeature> _settings;
-        private readonly HashSet<ActionFeature> _actions;
+        private readonly HashSet<ActionFeature> _features;
     }
 }
