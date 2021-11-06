@@ -17,6 +17,9 @@ namespace Assets.Scripts.FeatureStorages
         private FeatureStorageProjectile() { }
 
         public static FeatureStorage Instance => instance;
+
+        public static ActionFeature GetByName(string name) => instance.GetByName(name);
+
         public static IEnumerable<ActionFeature> Actions => instance.Features;
     }
 }

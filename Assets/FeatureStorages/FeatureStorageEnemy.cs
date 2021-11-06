@@ -22,6 +22,8 @@ namespace Assets.Scripts.FeatureStorages
 
         public static FeatureStorage Instance => instance;
 
+        public static ActionFeature GetByName(string name) => instance.GetByName(name);
+
         public static IEnumerable<ActionFeature> Actions => instance.Features;
 
         public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: false);

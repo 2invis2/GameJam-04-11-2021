@@ -1,9 +1,9 @@
 ﻿using System;
 using MurphyInc.Core.Model.Interfaces;
-using System;
+using System.Collections.Generic;
 
 namespace MurphyInc.Core.Model
-{
+{   
     public class BaseFeature : IFeature
     {
         public BaseFeature(string name, string description, bool isEnable = false)
@@ -52,6 +52,15 @@ namespace MurphyInc.Core.Model
         /// </summary>
         public string Description => _description;
 
+        public bool Equals(BaseFeature obj)
+        {
+            if (obj == null) return false;
+            return GetHashCode() == obj.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            return Equals((BaseFeature)obj);
+        }
         public override int GetHashCode() => Name.GetHashCode();
 
         public event Action callback;
@@ -60,5 +69,18 @@ namespace MurphyInc.Core.Model
         private readonly string _description;
         private bool _isEnable;
 
+    }
+
+    public class BaseFeatureComparer<TFeature> : IEqualityComparer<TFeature> where TFeature : BaseFeature
+    {
+        public bool Equals(TFeature x, TFeature y)
+        {
+            return x.Equals(y);
+        }
+
+        public int GetHashCode(TFeature obj)
+        {
+            return obj.GetHashCode();
+        }
     }
 }

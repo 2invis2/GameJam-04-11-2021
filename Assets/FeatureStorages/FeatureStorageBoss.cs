@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿
 using MurphyInc.Core.Model;
+using System.Collections.Generic;
 
 namespace Assets.Scripts.FeatureStorages
 {
-
     public sealed class FeatureStorageBoss
     {
         private static readonly FeatureStorage instance;
@@ -22,7 +22,7 @@ namespace Assets.Scripts.FeatureStorages
 
         public static FeatureStorage Instance => instance;
 
-        public static IEnumerable<ActionFeature> Actions => instance.Features;
+        public static IEnumerable<ActionFeature> Features => instance.Features;
 
         public static readonly ActionFeature BossIsWalking = new ActionFeature(name: nameof(BossIsWalking), description: "Босс выходит из комнаты", isEnable: false);       
     }
