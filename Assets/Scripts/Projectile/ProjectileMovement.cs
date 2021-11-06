@@ -18,7 +18,8 @@ namespace Projectile
 
         private bool IsSuitableCollision(GameObject otherGameObject)
         {
-            return true;
+            //return true;
+            return otherGameObject.CompareTag("Player");
         }
 
         private void Finished()
@@ -39,7 +40,7 @@ namespace Projectile
 
         private void Movement()
         {
-            transform.position += Vector3.up * updateRatio * speed;
+            transform.position += transform.up * updateRatio * speed;
         }
     }
 }

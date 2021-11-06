@@ -11,8 +11,8 @@ using UnityEditor;
 
 public class EnemyBase : MonoBehaviour
 {
-    [SerializeField] DetectorComponent detector;
-    [SerializeField] MovementComponent movement;
+    [SerializeField] protected DetectorComponent detector;
+    [SerializeField] protected MovementComponent movement;
 
     protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
 
@@ -22,7 +22,7 @@ public class EnemyBase : MonoBehaviour
     protected virtual void Start()
     {
         Init();
-        ActionFeatureInit();
+        //ActionFeatureInit();
     }
 
     private void ActionFeatureInit()
@@ -38,9 +38,8 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Init()
     {
-        if (detector == null) detector = GetComponent<DetectorComponent>();
+        GetParts();
         if (detector != null) { SetDetection("Player", DetectionResult); }
-        if (movement == null) movement = GetComponent<MovementComponent>();
         if (movement != null) { movement.OnTargetReached = MovementCompleteResult; }
     }
 
@@ -84,4 +83,14 @@ public class EnemyBase : MonoBehaviour
         }
     }
     #endregion
+#if UNITY_EDITOR
+    protected virtual void OnValidate() {
+        GetParts();
+    }
+#endif
+    protected virtual void GetParts()
+    {
+        if (movement == null) movement = GetComponent<MovementComponent>();
+        if (detector == null) detector = GetComponent<DetectorComponent>();
+    }
 }

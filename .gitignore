@@ -9,9 +9,6 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/[Aa]ssets/[Ss]cripts/.idea/
-/[Aa]ssets/.idea/
-/.idea/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -36,7 +33,6 @@
 ExportedObj/
 .consulo/
 *.unityproj
-*.csproj
 *.suo
 *.tmp
 *.user
@@ -53,9 +49,6 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-*.cs.meta
-**/Assets/**/*.meta
-**/Core/**/*.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -74,7 +67,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-/Unity.2D.Tilemap.Extras.csproj
-/Unity.2D.Tilemap.Extras.Editor.csproj
-/Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj
-*.sln
