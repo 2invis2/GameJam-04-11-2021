@@ -4158,6 +4158,7 @@ GameObject:
   - component: {fileID: 3582716545030306996}
   - component: {fileID: 6520204231827625197}
   - component: {fileID: 9129681677612757475}
+  - component: {fileID: 7105614086250996194}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -8095,6 +8096,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &7105614086250996194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630643143973683613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &4395977239147551078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13851,6 +13868,7 @@ GameObject:
   - component: {fileID: 5676087456065376225}
   - component: {fileID: 3594265496458890343}
   - component: {fileID: 7087796336690105946}
+  - component: {fileID: 4032995136115450746}
   m_Layer: 0
   m_Name: Obstacles
   m_TagString: Untagged
@@ -14262,6 +14280,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &4032995136115450746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235841643644252551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &6439063627404348020
 GameObject:
   m_ObjectHideFlags: 0
