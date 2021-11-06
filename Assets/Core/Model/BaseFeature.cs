@@ -39,7 +39,7 @@ namespace MurphyInc.Core.Model
         {
             get
             {
-                if (availableEvent != null)
+                if (availableEvent == null)
                     return true;
                 return availableEvent();
             }
