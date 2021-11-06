@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteCycle : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer renderer;
+    [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField]float stepTime = 0.1f;
     float timeLeft;
     [SerializeField] List<Sprite> sprites = new List<Sprite>();
@@ -13,8 +13,8 @@ public class SpriteCycle : MonoBehaviour
     private void Start()
     {
         if (sprites.Count < 1) { Destroy(this); return; }
-        if (renderer == null) GetRenderer();
-        renderer.sprite = sprites[0];
+        if (spriteRenderer == null) GetRenderer();
+        spriteRenderer.sprite = sprites[0];
         timeLeft = stepTime;
     }
     private void Update()
@@ -23,15 +23,15 @@ public class SpriteCycle : MonoBehaviour
         else {
             indexer++;
             if (indexer >= sprites.Count) indexer = 0;
-            renderer.sprite = sprites[indexer];
+            spriteRenderer.sprite = sprites[indexer];
             timeLeft = stepTime;
         }
     }
     private void OnValidate()
     {
-        if (renderer == null) GetRenderer();
+        if (spriteRenderer == null) GetRenderer();
     }
     void GetRenderer() {
-        renderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 }

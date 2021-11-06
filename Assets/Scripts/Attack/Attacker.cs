@@ -23,7 +23,7 @@ namespace Attack
                     CreateProjectile(attack, position);
                     break;
                 case AttackForm.DelayedExplosionAtPoint:
-
+                    CreateAoE(attack, position);
                     break;
                 default:
                     Debug.LogWarning("Tried to do unknown attack form: " + attack.form.ToString());
@@ -36,6 +36,10 @@ namespace Attack
             var projectile = Instantiate(attack.projectile, transform.position, transform.rotation);
             projectile.GetComponent<ProjectileMovement>().sender = this.gameObject;
             projectile.transform.LookAt(projectile.transform.position + Vector3.forward, position - (Vector2)transform.position);
+        }
+        private void CreateAoE(Attack attack, Vector2 position) {
+            var aoe = Instantiate(attack.projectile, position, transform.rotation);
+            aoe.GetComponent<AoEAppearAndBlow>().sender = this.gameObject;
         }
     }
 }

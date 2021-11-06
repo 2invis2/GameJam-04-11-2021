@@ -102,10 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacks:
-  - attackType: 1
-    projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}
+  - form: 1
+    attackType: 1
     range: 5
     isEnable: 1
+    projectile: {fileID: 2165285105057103878, guid: e790cad36bc62b24cb39222c031e3dc5, type: 3}
 --- !u!114 &7579526716794549090
 MonoBehaviour:
   m_ObjectHideFlags: 0
