@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDirector : MonoBehaviour
+public class EnemyDirector : PseudoSingletonMonoBehaviour<EnemyDirector>
 {
     [SerializeField] List<NpcAndRoute> control = new List<NpcAndRoute>();
     private void Start()
@@ -16,7 +16,16 @@ public class EnemyDirector : MonoBehaviour
     {
         FeatureStorageEnemy.RandVelocity.InvokeIsEnable();
     }
-
+    public void UnregisterEnemy(EnemyBase npc) {
+        int index = 0;
+        while (index < control.Count) {
+            if (control[index].npc == npc) {
+                control.RemoveAt(index);
+            }
+            else
+                index++;
+        }
+    }
     public void MoveNPCByRoute(EnemyBase npc, NPCRoute route) {
         if (npc == null) return;
         var controlIndex = control.FindIndex((con) => { return con.npc == npc; });

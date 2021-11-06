@@ -29,4 +29,9 @@ public class EnemyWalksRouteShootsPlayer : EnemyBase
         attackCDLeft = attackCD;
         return true;
     }
+    protected override void GetParts()
+    {
+        base.GetParts();
+        if (attacker == null) attacker = GetComponent<Attacker>();
+    }
 }

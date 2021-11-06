@@ -11,6 +11,7 @@ public enum BasicMovementType
     TurnAndMove,
     TurnThenMove
 }
+[RequireComponent(typeof(Rigidbody2D))]
 public class MovementComponent : MonoBehaviour
 {
     static readonly Vector3 globalForward = Vector3.forward;
@@ -29,6 +30,10 @@ public class MovementComponent : MonoBehaviour
     private void Awake()
     {
         if (rigidbodySelf == null) rigidbodySelf = gameObject.GetComponent<Rigidbody2D>();
+    }
+    private void Start()
+    {
+        if (subjectiveDir == null) SetupSubjDirection();
     }
     private void Update()
     {
@@ -60,6 +65,11 @@ public class MovementComponent : MonoBehaviour
     {
         get => moveSpeed;
         set => moveSpeed = value;
+    }
+    public float TurnSpeed
+    {
+        get => turnSpeed;
+        set => turnSpeed = value;
     }
 
     #region BasicMovement
@@ -145,7 +155,7 @@ public class MovementComponent : MonoBehaviour
     {
         target = newTarget;
     }
-    public void SetBehaviourType(BasicMovementType newBehaviour)
+    public void SetBasicMovementType(BasicMovementType newBehaviour)
     {
         behavourType = newBehaviour;
     }
@@ -167,5 +177,25 @@ public class MovementComponent : MonoBehaviour
         return Vector2.Dot(direction, subjectiveDir.up) < 0f;
     }
     #endregion
-
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (subjectiveDir == null) SetupSubjDirection();
+    }
+#endif
+    void SetupSubjDirection() {
+        if (subjectiveDir != null) return;
+        Transform subjObj = null;
+        for (int i = 0; i < transform.childCount; i++) {
+            var child = transform.GetChild(i);
+            if (child.gameObject.name == "CurrentDirection") {
+                subjObj = child;
+                break;
+            }
+        }
+        if (subjObj == null) subjObj = new GameObject("CurrentDirection").transform;
+        subjObj.SetPositionAndRotation(transform.position, transform.rotation);
+        subjObj.SetParent(transform);
+        subjectiveDir = subjObj;
+    }
 }
