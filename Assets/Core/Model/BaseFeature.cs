@@ -6,11 +6,14 @@ namespace MurphyInc.Core.Model
 {   
     public class BaseFeature : IFeature
     {
-        public BaseFeature(string name, string description, bool isEnable = false)
+        public delegate void ActionFeatureAction(string[] actionParams);
+
+        public BaseFeature(string name, string description, bool isEnable = false, params string[] actionParams)
         {
             IsEnable = isEnable;
             _name = name;
             _description = description;
+            _actionParams = actionParams;
         }
 
         /// <summary>
@@ -25,7 +28,7 @@ namespace MurphyInc.Core.Model
             set
             {
                 _isEnable = value;
-                callback?.Invoke();
+                callback?.Invoke(_actionParams);
             }
         }
 
@@ -63,12 +66,12 @@ namespace MurphyInc.Core.Model
         }
         public override int GetHashCode() => Name.GetHashCode();
 
-        public event Action callback;
+        public event ActionFeatureAction callback;
         private readonly Func<bool> availableEvent;
         private readonly string _name;
         private readonly string _description;
         private bool _isEnable;
-
+        protected readonly string[] _actionParams;
     }
 
     public class BaseFeatureComparer<TFeature> : IEqualityComparer<TFeature> where TFeature : BaseFeature
