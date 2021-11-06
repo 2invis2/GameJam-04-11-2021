@@ -12,11 +12,11 @@ namespace Envt
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
-            FeatureStorageEnv.SlidingTables.callback += OnCallback;
-            FeatureStorageEnv.SlidingTables.IsEnable = true;
+            if (gameObject.CompareTag("Table"))
+                FeatureStorageEnv.SlidingTables.callback += OnCallbackSlidingTables;
         }
 
-        private void OnCallback()
+        private void OnCallbackSlidingTables()
         {
             isSliding = FeatureStorageEnv.SlidingTables.IsEnable;
             RbSettings(isSliding);

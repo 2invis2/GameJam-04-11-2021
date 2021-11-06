@@ -39,6 +39,8 @@ namespace Assets.Scripts.FeatureStorages
         public static IEnumerable<SettingsFeature> Settings => instance.Settings;
         public static IEnumerable<ActionFeature> Actions => instance.Actions;
 
-        public static readonly ActionFeature SlidingTables = new ActionFeature(name: nameof(SlidingTables), description: "Столы скользят по полу", isEnable: true);
+        public static readonly ActionFeature SlidingTables = new ActionFeature(name: nameof(SlidingTables), description: "Столы скользят по полу", isEnable: false);
+        public static readonly ActionFeature LesserFOV = new ActionFeature(name: nameof(LesserFOV), description: "Плохая видимость", isEnable: false);
+        public static readonly ActionFeature BiggerFOV = new ActionFeature(name: nameof(BiggerFOV), description: "Хорошая видимость", isEnable: false);
     }
 }

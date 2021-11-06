@@ -82,6 +82,8 @@
      <Compile Include="Assets\FeatureStorages\FeatureStorage.cs" />
      <Compile Include="Assets\FeatureStorages\FeatureStorageEnv.cs" />
      <Compile Include="Assets\Scripts\Envt\Sliding.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerFOV.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ChangeDetection.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/UnityS/2020.3.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

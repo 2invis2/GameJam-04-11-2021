@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class DetectorComponent : MonoBehaviour
 {
-    [SerializeField] float detectionRange = 3f;//range-only now
+    public float detectionRange = 3f; //range-only now
     [SerializeField] string tagToDetect;
     public UnityAction<List<GameObject>> OnDetection;
 
@@ -17,5 +17,6 @@ public class DetectorComponent : MonoBehaviour
         for (int i = 0; i < allThingsInRange.Length; i++) if (allThingsInRange[i].gameObject.CompareTag(tagToDetect)) detectedObjects.Add(allThingsInRange[i].gameObject);
         OnDetection(detectedObjects);
     }
+    
     public void SetTagToDetect(string tag) { tagToDetect = tag; }
 }
