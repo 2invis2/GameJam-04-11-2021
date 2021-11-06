@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 8715581880755458469}
   - component: {fileID: 8715581880755458470}
   - component: {fileID: 8715581880755458465}
-  - component: {fileID: 8715581880755458464}
+  - component: {fileID: 5009197284091842491}
+  - component: {fileID: 4358815431344383895}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detector: {fileID: 8715581880755458465}
-  movement: {fileID: 8715581880755458464}
+  movement: {fileID: 4358815431344383895}
 --- !u!114 &8715581880755458465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +186,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 3
   tagToDetect: Player
---- !u!114 &8715581880755458464
+--- !u!195 &5009197284091842491
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715581880755458471}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 180
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4358815431344383895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,14 +217,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8715581880755458471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}
+  m_Script: {fileID: 11500000, guid: c8e59a262f4e26848b59a36f12b39020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavourType: 2
-  rigidbodySelf: {fileID: 8715581880755458468}
-  subjectiveDir: {fileID: 8715581881792861572}
-  moveSpeed: 5
-  turnSpeed: 1
   target: {fileID: 0}
 --- !u!1 &8715581881792861573
 GameObject:
