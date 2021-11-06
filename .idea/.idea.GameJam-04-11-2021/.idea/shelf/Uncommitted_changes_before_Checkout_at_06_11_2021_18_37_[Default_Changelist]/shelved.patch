@@ -1,0 +1,112 @@
+Index: Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!1001 &8315054952558427106\r\nPrefabInstance:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 2\r\n  m_Modification:\r\n    m_TransformParent: {fileID: 0}\r\n    m_Modifications:\r\n    - target: {fileID: 8715581880755458465, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: detectionRange\r\n      value: 10\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_RootOrder\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalPosition.x\r\n      value: 2.86\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalPosition.y\r\n      value: -35.8\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalPosition.z\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalRotation.w\r\n      value: 1\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalRotation.x\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalRotation.y\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalRotation.z\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalEulerAnglesHint.x\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalEulerAnglesHint.y\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458466, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_LocalEulerAnglesHint.z\r\n      value: 0\r\n      objectReference: {fileID: 0}\r\n    - target: {fileID: 8715581880755458471, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n      propertyPath: m_Name\r\n      value: EnemyWalksRouteShootsPlayer Variant\r\n      objectReference: {fileID: 0}\r\n    m_RemovedComponents: []\r\n  m_SourcePrefab: {fileID: 100100000, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n--- !u!1 &835125155597019717 stripped\r\nGameObject:\r\n  m_CorrespondingSourceObject: {fileID: 8715581880755458471, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n  m_PrefabInstance: {fileID: 8315054952558427106}\r\n  m_PrefabAsset: {fileID: 0}\r\n--- !u!114 &835125155597019715 stripped\r\nMonoBehaviour:\r\n  m_CorrespondingSourceObject: {fileID: 8715581880755458465, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n  m_PrefabInstance: {fileID: 8315054952558427106}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 835125155597019717}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: 1f15b6a5fc1add94992b3f670a3e7c5f, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n--- !u!114 &835125155597019714 stripped\r\nMonoBehaviour:\r\n  m_CorrespondingSourceObject: {fileID: 8715581880755458464, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}\r\n  m_PrefabInstance: {fileID: 8315054952558427106}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 835125155597019717}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n--- !u!114 &7579526716794549090\r\nMonoBehaviour:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 835125155597019717}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n  detector: {fileID: 835125155597019715}\r\n  movement: {fileID: 835125155597019714}\r\n  attacker: {fileID: 2724159625462818877}\r\n  attackCD: 1\r\n  attackCDLeft: 0\r\n--- !u!114 &2724159625462818877\r\nMonoBehaviour:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 835125155597019717}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n  attacks:\r\n  - attackType: 0\r\n    projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}\r\n    range: 0\r\n    isEnable: 1\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab b/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab
+--- a/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab	(revision 7eab3f80e58bab60a6faf5353d8972eb39196c68)
++++ b/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab	(date 1636194699166)
+@@ -88,7 +88,7 @@
+   m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+---- !u!114 &7579526716794549090
++--- !u!114 &2724159625462818877
+ MonoBehaviour:
+   m_ObjectHideFlags: 0
+   m_CorrespondingSourceObject: {fileID: 0}
+@@ -97,15 +97,15 @@
+   m_GameObject: {fileID: 835125155597019717}
+   m_Enabled: 1
+   m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
++  m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+-  detector: {fileID: 835125155597019715}
+-  movement: {fileID: 835125155597019714}
+-  attacker: {fileID: 2724159625462818877}
+-  attackCD: 1
+-  attackCDLeft: 0
+---- !u!114 &2724159625462818877
++  attacks:
++  - attackType: 0
++    projectile: {fileID: 5344913636126942012, guid: 1eb4914ab082ced4387ae317593e38c4, type: 3}
++    range: 0
++    isEnable: 1
++--- !u!114 &7579526716794549090
+ MonoBehaviour:
+   m_ObjectHideFlags: 0
+   m_CorrespondingSourceObject: {fileID: 0}
+@@ -114,11 +114,11 @@
+   m_GameObject: {fileID: 835125155597019717}
+   m_Enabled: 1
+   m_EditorHideFlags: 0
+-  m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}
++  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+-  attacks:
+-  - attackType: 0
+-    projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}
+-    range: 0
+-    isEnable: 1
++  detector: {fileID: 835125155597019715}
++  movement: {fileID: 835125155597019714}
++  attacker: {fileID: 2724159625462818877}
++  attackCD: 1
++  attackCDLeft: 0
+Index: .idea/.idea.GameJam-04-11-2021/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3c3b4386-416b-4727-89ce-e3beebde1e30\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Attack/Attack.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Attack/AttackType.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Attack/IAttacker.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Attack/Attacker.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/Enemy.prefab\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Projectile/ProjectileMovement.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Attack/EnemyAttacks.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <changedPaths>\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Logic/InputManager.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Projectile/ProjectileMovement.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs\" />\r\n      <option value=\"$PROJECT_DIR$/Assets/Scripts/Rooms/RoomWhereat.cs\" />\r\n    </changedPaths>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"20TGszwM6QxJEvebrpTb56wcygI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"Discover.Launch.Via.Unity\" value=\"true\" />\r\n    <property name=\"Git.Branch.Popup.ShowAllRemotes\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.sourceCode\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3c3b4386-416b-4727-89ce-e3beebde1e30\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1636061399466</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1636061399466</updated>\r\n      <workItem from=\"1636061424209\" duration=\"4994000\" />\r\n      <workItem from=\"1636105900724\" duration=\"2912000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"fix prefab Enemy\">\r\n      <created>1636189688449</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1636189688449</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"update .gitignore\">\r\n      <created>1636190680058</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1636190680058</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"false\" />\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"fix prefab Enemy\" />\r\n    <MESSAGE value=\"update .gitignore\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"update .gitignore\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml b/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml
+--- a/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml	(revision 7eab3f80e58bab60a6faf5353d8972eb39196c68)
++++ b/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml	(date 1636197599689)
+@@ -4,7 +4,6 @@
+     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyWalksRouteShootsPlayer Variant.prefab" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -106,7 +105,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1636190680058</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Add animation Projectile.prefab">
++      <created>1636196451679</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1636196451679</updated>
++    </task>
++    <task id="LOCAL-00004" summary="add sprites enemy">
++      <created>1636196579129</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1636196579129</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -137,6 +150,8 @@
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+     <MESSAGE value="fix prefab Enemy" />
+     <MESSAGE value="update .gitignore" />
+-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore" />
++    <MESSAGE value="Add animation Projectile.prefab" />
++    <MESSAGE value="add sprites enemy" />
++    <option name="LAST_COMMIT_MESSAGE" value="add sprites enemy" />
+   </component>
+ </project>
+\ No newline at end of file

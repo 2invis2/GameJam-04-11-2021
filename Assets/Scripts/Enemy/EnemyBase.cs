@@ -17,7 +17,7 @@ public class EnemyBase : MonoBehaviour
     protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
 
     public Transform MovementTarget => movement ? movement.Target : null;
-    public UnityAction<EnemyBase> OnMovementTargetReached;
+    public UnityAction<EnemyBase> OnMovementTargetReached = delegate { };
 
     protected virtual void Start()
     {
