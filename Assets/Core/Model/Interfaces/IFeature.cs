@@ -5,6 +5,8 @@ namespace MurphyInc.Core.Model.Interfaces
     {
         bool IsEnable { get; set; }
 
+        bool IsAvailable { get; }
+
         string Description { get; }
     }
 }
