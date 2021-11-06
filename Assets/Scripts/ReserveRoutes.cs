@@ -7,11 +7,13 @@ using UnityEngine;
 
 public class ReserveRoutes : PseudoSingletonMonoBehaviour<ReserveRoutes>
 {
-    [SerializeField] private List<NPCRoute> reservs;
+    [SerializeField] private List<NPCRoute> reservsInspector;
+    private static List<NPCRoute> reservs;
 
     void Awake()
     {
         Invoke(nameof(Test), 5f);
+        reservs = reservsInspector;
     }
 
     void Test()
@@ -20,7 +22,7 @@ public class ReserveRoutes : PseudoSingletonMonoBehaviour<ReserveRoutes>
     }
     public static void SetReserveRoute(EnemyBase enemyBase)
     {
-        //var randomIndex = Random.Range(0, Instance.reservs.Count-1);
-        EnemyDirector.Instance.MoveNPCByRoute(enemyBase, Instance.reservs[0]);
+        var randomIndex = Random.Range(0, reservs.Count-1);
+        EnemyDirector.Instance.MoveNPCByRoute(enemyBase, reservs[randomIndex]);
     }
 }
