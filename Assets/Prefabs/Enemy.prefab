@@ -194,11 +194,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8715581880755458471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddf9135b405ff894cb267ad63868d719, type: 3}
+  m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   behavourType: 2
-  rigidbodySelf: {fileID: 0}
+  rigidbodySelf: {fileID: 8715581880755458468}
   subjectiveDir: {fileID: 8715581881792861572}
   moveSpeed: 5
   turnSpeed: 1
