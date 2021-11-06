@@ -4,19 +4,29 @@ namespace MurphyInc.Core.Model
 {
     public sealed class ActionFeature : BaseFeature
     {
-        public ActionFeature(string name, string description, bool isEnable = false)
+        public delegate void ActionFeatureAction(string[] actionParams);
+
+        public ActionFeature(string name, string description, bool isEnable = false, params string[] actionParams)
             : base(name, description, isEnable)
-        { 
+        {
+            _actionParams = actionParams;
         }
 
-        public event Action Action;
+        public event ActionFeatureAction Action;
 
         public void InvokeIsEnable()
         {
             if (IsEnable)
             {
-                Action?.Invoke();
+                Action?.Invoke(_actionParams);
             }
+        }
+
+        private  readonly string[] _actionParams;
+
+        public ActionFeature Copy()
+        {
+            return new ActionFeature(Name, Description, IsEnable);
         }
     }
 }

@@ -6,7 +6,6 @@ namespace MurphyInc.Core.Model
 {
     public class BaseFeature : IFeature
     {
-
         public BaseFeature(string name, string description, bool isEnable = false)
         {
             IsEnable = isEnable;
@@ -42,7 +41,6 @@ namespace MurphyInc.Core.Model
                 return availableEvent();
             }
         }
-
 
         /// <summary>
         /// Имя свойства

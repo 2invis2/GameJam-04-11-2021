@@ -25,6 +25,6 @@ namespace Assets.Scripts.FeatureStorages
         public static IEnumerable<ActionFeature> Actions => instance.Features;
 
         public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: true);
-        
+        public static readonly ActionFeature ReactToMovement = new ActionFeature(name: nameof(ReactToMovement), description: "Тебя не замечают пока стоишь", isEnable: true);
     }
 }
