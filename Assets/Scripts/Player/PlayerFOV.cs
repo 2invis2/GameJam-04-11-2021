@@ -20,7 +20,7 @@ public class PlayerFOV : MonoBehaviour
         FeatureStorageEnv.BiggerFOV.callback+=OnCallbackBig;
     }
 
-    private void OnCallbackLess()
+    private void OnCallbackLess(string[] actionParams)
     {
         if (FeatureStorageEnv.LesserFOV.IsEnable)
         {
@@ -29,7 +29,7 @@ public class PlayerFOV : MonoBehaviour
         }
     }
     
-    private void OnCallbackBig()
+    private void OnCallbackBig(string[] actionParams)
     {
         if (FeatureStorageEnv.BiggerFOV.IsEnable)
         {
