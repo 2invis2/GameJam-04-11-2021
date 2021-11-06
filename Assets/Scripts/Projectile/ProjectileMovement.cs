@@ -8,7 +8,7 @@ namespace Projectile
         [SerializeField] private float lifetime;
         [SerializeField] private float speed;
         [SerializeField] private float updateRatio;
-        private bool isCollided = false;
+        public GameObject sender;
 
         private void Awake()
         {
@@ -16,11 +16,7 @@ namespace Projectile
             InvokeRepeating(nameof(Movement), 0, updateRatio);
         }
 
-        private bool IsSuitableCollision(GameObject otherGameObject)
-        {
-            //return true;
-            return otherGameObject.CompareTag("Player");
-        }
+        
 
         private void Finished()
         {
@@ -29,18 +25,23 @@ namespace Projectile
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (IsSuitableCollision(other.gameObject))
+            if (other.gameObject.CompareTag("Player"))
             {
-                isCollided = true;
+                other.GetComponent<PlayerHP>().ProjectileHit(sender);
                 Finished();
-                Destroy(other.gameObject);
+            }
+
+            if (!other.gameObject.Equals(sender))
+            {
+                Debug.Log(other);
+                Finished();
             }
                 
         }
 
         private void Movement()
         {
-            transform.position += transform.up * updateRatio * speed;
+            transform.position += transform.up * updateRatio * speed; 
         }
     }
 }
