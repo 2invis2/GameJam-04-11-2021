@@ -85,26 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 835125155597019717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab147595666a9345b2c0a786547e3f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 36c3c661fe472ae478d6819a7e41371a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2477243984705215595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835125155597019717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2744a1fe57a834b984eca73fc4aa35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attacks:
-  - attackType: 1
-    projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}
-    range: 5
-    isEnable: 1
 --- !u!114 &7579526716794549090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,11 +97,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 835125155597019717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b811d913c78f34cbe082bf7ba29f55, type: 3}
+  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   detector: {fileID: 835125155597019715}
   movement: {fileID: 835125155597019714}
-  attacker: {fileID: 2477243984705215595}
+  attacker: {fileID: 2724159625462818877}
   attackCD: 1
   attackCDLeft: 0
+--- !u!114 &2724159625462818877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835125155597019717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacks:
+  - attackType: 0
+    projectile: {fileID: 1362479267246782027, guid: 85cbbaf70b28aa047aa5c397c801f76e, type: 3}
+    range: 0
+    isEnable: 1
