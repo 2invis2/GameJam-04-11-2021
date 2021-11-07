@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts.FeatureStorages;
 using MurphyInc.Core.Model.Interfaces;
@@ -51,6 +52,13 @@ public class СhoiceNewLaws : MonoBehaviour
         if (choiceLaw != null)
         {
             choiceLaw.IsEnable = true;
+            
         }
+        Invoke(nameof(StartGame), 5.0f);
+    }
+
+    private void StartGame()
+    {
+        Application.LoadLevel(0);
     }
 }
