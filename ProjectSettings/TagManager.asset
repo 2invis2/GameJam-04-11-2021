@@ -8,6 +8,8 @@ TagManager:
   - Walls
   - Chairs
   - Toilet
+  - Storage
+  - Plant
   layers:
   - Default
   - TransparentFX

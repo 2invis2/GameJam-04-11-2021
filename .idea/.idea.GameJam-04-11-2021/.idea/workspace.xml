@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +84,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomsRestrictions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ReserveRoutes.cs" />
       <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20TGszwM6QxJEvebrpTb56wcygI" />
