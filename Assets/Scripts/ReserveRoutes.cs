@@ -9,7 +9,13 @@ public class ReserveRoutes : PseudoSingletonMonoBehaviour<ReserveRoutes>
 {
     [SerializeField] private List<NPCRoute> reservsInspector;
     private static List<NPCRoute> reservs;
-    
+
+    public override void Awake()
+    {
+        reservs = reservsInspector;
+    }
+
+
     public static void SetReserveRoute(EnemyBase enemyBase)
     {
         var randomIndex = Random.Range(0, reservs.Count-1);
