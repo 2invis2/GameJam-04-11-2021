@@ -52,7 +52,7 @@ public class EnemyDirector : PseudoSingletonMonoBehaviour<EnemyDirector>
             npc.SetTarget(control[npcIndex].route.GetNextPoint(npc.MovementTarget));
         }
         else {
-            Debug.Log("No next point for " + npc.gameObject.name);
+            //Debug.Log("No next point for " + npc.gameObject.name);
         }
     }
 }

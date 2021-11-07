@@ -271,7 +271,7 @@ namespace UnityEditor
                 }
                 else
                 {
-                    Debug.LogWarning("Circular tile reference");
+                    //Debug.LogWarning("Circular tile reference");
                 }
             }
 

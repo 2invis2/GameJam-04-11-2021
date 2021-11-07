@@ -211,7 +211,7 @@ namespace UnityEditor.Tilemaps
         /// <param name="position">Starting position of the flood fill.</param>
         public override void FloodFill(GridLayout gridLayout, GameObject brushTarget, Vector3Int position)
         {
-            Debug.LogWarning("FloodFill not supported");
+            //Debug.LogWarning("FloodFill not supported");
         }
 
         /// <summary>

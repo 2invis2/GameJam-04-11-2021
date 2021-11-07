@@ -18,15 +18,15 @@ namespace Assets.Scripts.FeatureStorages
         private void Start()
         {
             DontDestroyOnLoad(gameObject);
-            Debug.Log(
-                "fsMain exists: " + (fsMain != null) + "\n" +
-                (fsMain != null ? "feature count: " + fsMain.Features.ToList().Count + "\n" : "") +
-                "fsBoss exists: " + (fsBoss != null) + "\n" +
-                "fsEnemy exists: " + (fsEnemy != null) + "\n" +
-                "fsEnv exists: " + (fsEnv != null) + "\n" +
-                "fsProjectile exists: " + (fsProjectile != null) + "\n" +
-                "fsRooms exists: " + (fsRooms != null) + "\n"
-                );
+            //Debug.Log(
+            //    "fsMain exists: " + (fsMain != null) + "\n" +
+            //    (fsMain != null ? "feature count: " + fsMain.Features.ToList().Count + "\n" : "") +
+            //    "fsBoss exists: " + (fsBoss != null) + "\n" +
+            //    "fsEnemy exists: " + (fsEnemy != null) + "\n" +
+            //    "fsEnv exists: " + (fsEnv != null) + "\n" +
+            //    "fsProjectile exists: " + (fsProjectile != null) + "\n" +
+            //    "fsRooms exists: " + (fsRooms != null) + "\n"
+            //    );
         }
     }
 }

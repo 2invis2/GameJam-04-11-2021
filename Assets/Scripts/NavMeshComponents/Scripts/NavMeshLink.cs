@@ -71,7 +71,7 @@ namespace UnityEngine.AI
 #if UNITY_EDITOR
             if (s_Tracked.Contains(link))
             {
-                Debug.LogError("Link is already tracked: " + link);
+                //Debug.LogError("Link is already tracked: " + link);
                 return;
             }
 #endif
@@ -106,7 +106,7 @@ namespace UnityEngine.AI
 #if UNITY_EDITOR
             if (m_LinkInstance.valid)
             {
-                Debug.LogError("Link is already added: " + this);
+                //Debug.LogError("Link is already added: " + this);
                 return;
             }
 #endif

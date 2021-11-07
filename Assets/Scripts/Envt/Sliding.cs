@@ -28,7 +28,7 @@ namespace Envt
         
         private void OnCallbackConcreteChairs(string[] actionParams)
         {
-            Debug.Log(FeatureStorageEnv.ConcreteChairs.IsEnable);
+            //Debug.Log(FeatureStorageEnv.ConcreteChairs.IsEnable);
             if (FeatureStorageEnv.ConcreteChairs.IsEnable)
             {
                 rb.bodyType = RigidbodyType2D.Static;
@@ -37,7 +37,7 @@ namespace Envt
             {
                 rb.bodyType = RigidbodyType2D.Dynamic;
             }
-            Debug.Log(FeatureStorageEnv.ConcreteChairs.IsEnable);
+            //Debug.Log(FeatureStorageEnv.ConcreteChairs.IsEnable);
         }
         
         private void OnCallbackSlidingToilets(string[] actionParams)
@@ -49,7 +49,7 @@ namespace Envt
         private void RbSettings(bool isDynamic)
         {
             rb.bodyType = isDynamic ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
-            Debug.Log(rb.bodyType);
+            //Debug.Log(rb.bodyType);
         }
     }
 }

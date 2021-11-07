@@ -1146,7 +1146,7 @@ namespace UnityEditor
             }
             catch (Exception)
             {
-                Debug.LogError("Unable to paste rules from system copy buffer");
+                //Debug.LogError("Unable to paste rules from system copy buffer");
             }
         }
     }
