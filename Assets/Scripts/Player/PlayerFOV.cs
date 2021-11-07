@@ -23,10 +23,10 @@ public class PlayerFOV : MonoBehaviour
     private void OnCallbackLess(string[] actionParams)
     {
         if (FeatureStorageEnv.LesserFOV.IsEnable)
-        {
-            cameraCurr.orthographicSize = cameraBaseSize / FOVMultiplier;
-            FeatureStorageEnv.BiggerFOV.IsEnable = false;
-        }
+            {
+                cameraCurr.orthographicSize = cameraBaseSize / FOVMultiplier;
+                FeatureStorageEnv.BiggerFOV.IsEnable = false;
+            }
     }
     
     private void OnCallbackBig(string[] actionParams)

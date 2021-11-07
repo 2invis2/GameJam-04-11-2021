@@ -22,8 +22,8 @@ namespace Assets.Scripts.FeatureStorages
         public static ActionFeature GetByName(string name) => instance.GetByName(name);
 
         public static readonly ActionFeature RandVelocity = new ActionFeature(name: nameof(RandVelocity), description: "Никто не контролируют свою скорость", isEnable: false);
-        public static readonly ActionFeature ReactToMovement = new ActionFeature(name: nameof(ReactToMovement), description: "Тебя не замечают пока стоишь", isEnable: false);
-        public static readonly ActionFeature CanBePushed = new ActionFeature(name: nameof(CanBePushed), description: "Противников можно толкать", isEnable: false);
+        //public static readonly ActionFeature ReactToMovement = new ActionFeature(name: nameof(ReactToMovement), description: "Тебя не замечают пока стоишь", isEnable: false);
+        //public static readonly ActionFeature CanBePushed = new ActionFeature(name: nameof(CanBePushed), description: "Противников можно толкать", isEnable: false);
         
         public static IEnumerable<ActionFeature> Features => _features;
 
@@ -31,8 +31,8 @@ namespace Assets.Scripts.FeatureStorages
             new ActionFeature[]
             {
                  RandVelocity,
-                 ReactToMovement,
-                 CanBePushed
+                 //ReactToMovement,
+                 //CanBePushed
             };
     }
 }

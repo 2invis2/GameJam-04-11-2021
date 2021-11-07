@@ -17,6 +17,7 @@ namespace Assets.Scripts.FeatureStorages
 
         private void Start()
         {
+            DontDestroyOnLoad(gameObject);
             Debug.Log(
                 "fsMain exists: " + (fsMain != null) + "\n" +
                 (fsMain != null ? "feature count: " + fsMain.Features.ToList().Count + "\n" : "") +
