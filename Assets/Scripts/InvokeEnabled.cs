@@ -24,6 +24,6 @@ public class InvokeEnabled : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         kek();
-        Debug.Log("work");
+        //Debug.Log("work");
     }
 }

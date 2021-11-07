@@ -18,6 +18,12 @@ namespace Envt
                 FeatureStorageEnv.ConcreteChairs.callback += OnCallbackConcreteChairs;
             if (gameObject.CompareTag("Toilet"))
                 FeatureStorageEnv.SlidingToilets.callback += OnCallbackSlidingToilets;
+            if (gameObject.CompareTag("Table"))
+                FeatureStorageEnv.SlidingTables.CallBackInvoke();
+            if (gameObject.CompareTag("Chairs"))
+                FeatureStorageEnv.ConcreteChairs.CallBackInvoke();
+            if (gameObject.CompareTag("Toilet"))
+                FeatureStorageEnv.SlidingToilets.CallBackInvoke();
         }
 
         private void OnCallbackSlidingTables(string[] actionParams)
@@ -49,7 +55,16 @@ namespace Envt
         private void RbSettings(bool isDynamic)
         {
             rb.bodyType = isDynamic ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
-            //Debug.Log(rb.bodyType);
+        }
+
+        private void OnDestroy()
+        {
+            if (gameObject.CompareTag("Table"))
+                FeatureStorageEnv.SlidingTables.callback -= OnCallbackSlidingTables;
+            if (gameObject.CompareTag("Chairs"))
+                FeatureStorageEnv.ConcreteChairs.callback -= OnCallbackConcreteChairs;
+            if (gameObject.CompareTag("Toilet"))
+                FeatureStorageEnv.SlidingToilets.callback -= OnCallbackSlidingToilets;
         }
     }
 }
