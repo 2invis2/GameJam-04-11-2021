@@ -128,7 +128,7 @@ MonoBehaviour:
   movement: {fileID: 5401745404526863684}
   attacker: {fileID: 4367800829389349715}
   room: {fileID: 8803199605136118034}
-  chaseSpeed: 4.5
+  chaseSpeed: 3.5
 --- !u!114 &4367800829389349715
 MonoBehaviour:
   m_ObjectHideFlags: 0

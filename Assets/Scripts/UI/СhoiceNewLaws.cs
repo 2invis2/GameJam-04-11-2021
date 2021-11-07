@@ -30,7 +30,10 @@ public class СhoiceNewLaws : MonoBehaviour
         
         for(var i = 0; i<countChoiceLaws; i++)
         {
-            descriptionsChoicesLaws[i].SetText(choicesLaws[i].Description);
+            if (i < choicesLaws.Length)
+                descriptionsChoicesLaws[i].SetText(choicesLaws[i].Description);
+            else
+                descriptionsChoicesLaws[i].transform.parent.gameObject.SetActive(false);
         }
     }
     

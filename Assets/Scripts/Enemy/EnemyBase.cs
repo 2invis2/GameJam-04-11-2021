@@ -116,9 +116,15 @@ public class EnemyBase : MonoBehaviour
 
     private void AddActionFeatures()
     {
+        if (gameObject.CompareTag("Boss"))
+        {
+            FeatureStorageBoss.BossIsWalking.callback += OnRestrictedAccessCallback;
+            FeatureStorageBoss.BossIsWalking.CallBackInvoke();
+        }
+
         foreach (var item in Rooms.Rooms.roomsDictionary)
         {
-            var newActionFeature = new ActionFeature("RestrictedAccess"+item.Key, "Врагам не доступна комната "+item.Value, false, new string[]{item.Key});
+            var newActionFeature = new ActionFeature("RestrictedAccess"+item.Key, "Врагам не доступна комната "+item.Value, isEnable: false, isAvailable: true, new string[]{item.Key});
             newActionFeature.callback += OnRestrictedAccessCallback;
             featureStorageRooms.TryAddActionFeature(newActionFeature);
             newActionFeature.CallBackInvoke();
@@ -140,5 +146,7 @@ public class EnemyBase : MonoBehaviour
             var newActionFeature = FeatureStorageMain.Instance.GetByName("RestrictedAccess"+item.Key);
             newActionFeature.callback -= OnRestrictedAccessCallback;
         }
+
+        FeatureStorageBoss.BossIsWalking.callback -= OnRestrictedAccessCallback;
     }
 }

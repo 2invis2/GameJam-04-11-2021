@@ -5,8 +5,8 @@ namespace MurphyInc.Core.Model
     public sealed class ActionFeature : BaseFeature
     {       
 
-        public ActionFeature(string name, string description, bool isEnable = false, params string[] actionParams)
-            : base(name, description, isEnable, actionParams)
+        public ActionFeature(string name, string description, bool isEnable = false, bool isAvailable = true, params string[] actionParams)
+            : base(name, description, isEnable, isAvailable, actionParams)
         {
            
         }

@@ -9,7 +9,7 @@ public class FinalIntro : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(intro.time);
+        //Debug.Log(intro.time);
         if (intro.time >= 126.0f)
         {
             OpenNextScene();

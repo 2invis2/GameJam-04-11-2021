@@ -1,6 +1,7 @@
 ﻿using System;
 using MurphyInc.Core.Model.Interfaces;
 using System.Collections.Generic;
+using Assets.Scripts.FeatureStorages;
 
 namespace MurphyInc.Core.Model
 {
@@ -8,12 +9,13 @@ namespace MurphyInc.Core.Model
     {
         public delegate void ActionFeatureAction(string[] actionParams);
 
-        public BaseFeature(string name, string description, bool isEnable = false, params string[] actionParams)
+        public BaseFeature(string name, string description, bool isEnable = false, bool isAvailable = true, params string[] actionParams)
         {
             IsEnable = isEnable;
             _name = name;
             _description = description;
             _actionParams = actionParams;
+            _availableCondition = () => isAvailable;
         }
 
         public void CallBackInvoke()
@@ -36,8 +38,17 @@ namespace MurphyInc.Core.Model
             }
             set
             {
+                //TODO: Переписать логику на взаимоисключающие законы
+                if(Equals(FeatureStorageEnv.BiggerFOV) && value)
+                {
+                    FeatureStorageEnv.LesserFOV.IsEnable = false;
+                }
+                if (Equals(FeatureStorageEnv.LesserFOV) && value)
+                {
+                    FeatureStorageEnv.BiggerFOV.IsEnable = false;
+                }
+
                 _isEnable = value;
-                needCallBack = true;
             }
         }
 
@@ -50,9 +61,9 @@ namespace MurphyInc.Core.Model
         {
             get
             {
-                if (availableEvent == null)
+                if (_availableCondition == null)
                     return true;
-                return availableEvent();
+                return _availableCondition();
             }
         }
 
@@ -75,10 +86,10 @@ namespace MurphyInc.Core.Model
         {
             return Equals((BaseFeature)obj);
         }
-        public override int GetHashCode() => Name.GetHashCode();
+        public override int GetHashCode() =>  (Name ?? "").GetHashCode();
 
         public event ActionFeatureAction callback;
-        private readonly Func<bool> availableEvent;
+        public readonly Func<bool> _availableCondition;
         private readonly string _name;
         private readonly string _description;
         private bool _isEnable;

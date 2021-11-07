@@ -39,11 +39,13 @@ namespace Assets.Scripts.FeatureStorages
             {
                 return _features[name];
             }
-            return null;
+            return NullFeature;
         }
 
         public IEnumerable<ActionFeature> Features => _features.Values;
 
         private readonly Dictionary<string, ActionFeature> _features;
+
+        private readonly ActionFeature NullFeature = new ActionFeature("NullFeature", "NullFeature");
     }
 }

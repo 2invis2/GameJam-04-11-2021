@@ -59,7 +59,13 @@ public class RoomsRestrictions : MonoBehaviour
                 }
             }
 
-            if (FeatureStorageRooms.Instance.GetByName(("RestrictedAccess" + newRoom)).IsEnable)
+
+            if (FeatureStorageBoss.BossIsWalking.IsEnable && GetComponent<EnemyBase>().gameObject.CompareTag("Boss"))
+            {
+                ReserveRoutes.SetReserveRoute(GetComponent<EnemyBase>());
+            }
+
+            if (FeatureStorageRooms.Instance.GetByName("RestrictedAccess" + newRoom).IsEnable)
             {
                 ReserveRoutes.SetReserveRoute(GetComponent<EnemyBase>());
                 if (TryGetComponent(out EnemyChaser chaser))
@@ -89,6 +95,8 @@ public class RoomsRestrictions : MonoBehaviour
     private void SwitchByType(AttackType attackType)
     {
         var index = _attacker.attacks.FindIndex(x => x.attackType == attackType);
+        if (index < 0) return;
+
         var att = _attacker.attacks[index];
         _attacker.attacks[index] = new Attack.Attack(att.form, att.attackType, att.projectile, att.range, !att.isEnable);
     }

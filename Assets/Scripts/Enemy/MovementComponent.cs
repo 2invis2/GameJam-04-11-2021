@@ -28,7 +28,11 @@ public class MovementComponent : MonoBehaviour
 
     public void SetTarget(Transform newTarget) {
         target = newTarget;
-        agent.SetDestination(newTarget.position);
+        if (target != null)
+        { 
+            GetAgent();
+            agent.SetDestination(target.position);
+        }
     }
     private void Update()
     {
