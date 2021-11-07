@@ -9,17 +9,21 @@ namespace Assets.Scripts.FeatureStorages
 
         static FeatureStorageProjectile()
         {
-            var actions = new ActionFeature[] { };
+            instance = FeatureStorageMain.Instance;
 
-            instance = new FeatureStorage(actions);
+            instance.AddRange(_features);
         }
 
         private FeatureStorageProjectile() { }
 
         public static FeatureStorage Instance => instance;
 
-        public static ActionFeature GetByName(string name) => instance.GetByName(name);
+        public static IEnumerable<ActionFeature> Features => _features;
 
-        public static IEnumerable<ActionFeature> Actions => instance.Features;
+        private static ActionFeature[] _features =
+            new ActionFeature[]
+            {
+
+            };
     }
 }

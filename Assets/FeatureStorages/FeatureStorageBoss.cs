@@ -1,6 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
 using MurphyInc.Core.Model;
-using System.Collections.Generic;
 
 namespace Assets.Scripts.FeatureStorages
 {
@@ -10,20 +9,28 @@ namespace Assets.Scripts.FeatureStorages
 
         static FeatureStorageBoss()
         {
+            instance = FeatureStorageMain.Instance;
+
             var features = new[]
             {
                  BossIsWalking
             };
 
-            instance = new FeatureStorage(features);
+            instance.AddRange(features);
         }
 
         private FeatureStorageBoss() { }
 
         public static FeatureStorage Instance => instance;
 
-        public static IEnumerable<ActionFeature> Features => instance.Features;
+        public static readonly ActionFeature BossIsWalking = new ActionFeature(name: nameof(BossIsWalking), description: "Босс выходит из комнаты", isEnable: false);
 
-        public static readonly ActionFeature BossIsWalking = new ActionFeature(name: nameof(BossIsWalking), description: "Босс выходит из комнаты", isEnable: false);       
+        public static IEnumerable<ActionFeature> Features => _features;
+
+        private static ActionFeature[] _features =
+            new ActionFeature[]
+            {
+                BossIsWalking
+            };
     }
 }
