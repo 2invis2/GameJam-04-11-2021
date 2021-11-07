@@ -30,6 +30,9 @@ public class EnemyBase : MonoBehaviour
         Init();
         AddActionFeatures();
         //ActionFeatureInit();
+
+
+        var awda = FeatureStorageMain.GetFeatures(false, true);
     }
 
     private void ActionFeatureInit()
