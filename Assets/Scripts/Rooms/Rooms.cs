@@ -14,6 +14,12 @@ namespace Rooms
             roomsDictionary = new Dictionary<string, string>();
             roomsDictionary.Add("Toilet", "Туалет");
             roomsDictionary.Add("ServerRoom", "Серверная");
+            roomsDictionary.Add("Reception", "Ресепшн");
+            roomsDictionary.Add("Openspace", "Оупенспейс");
+            roomsDictionary.Add("Chill", "Комната отдыха");
+            roomsDictionary.Add("Dining", "Столовая");
+            roomsDictionary.Add("Corridor", "Коридоры");
+            roomsDictionary.Add("BossOffice", "Кабинет главы");
             roomsTilemaps = new List<Tilemap>();
             for (var i = 0; i < transform.childCount; i++)
             {

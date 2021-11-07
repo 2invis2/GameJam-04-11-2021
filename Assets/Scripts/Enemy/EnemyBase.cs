@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Assets.Scripts.FeatureStorages;
 using MurphyInc.Core.Model;
+using Rooms;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -14,6 +15,7 @@ public class EnemyBase : MonoBehaviour
 {
     [SerializeField] protected DetectorComponent detector;
     [SerializeField] protected MovementComponent movement;
+    [SerializeField] protected RoomWhereat room;
 
     protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
     protected FeatureStorage featureStorageRooms = FeatureStorageRooms.Instance;
@@ -95,6 +97,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (movement == null) movement = GetComponent<MovementComponent>();
         if (detector == null) detector = GetComponent<DetectorComponent>();
+        if (room == null) room = GetComponent<RoomWhereat>();
     }
 
     private void AddActionFeatures()
@@ -109,7 +112,7 @@ public class EnemyBase : MonoBehaviour
 
     private void OnRestrictedAccessCallback(string[] parametersAction)
     {
-        if (Rooms.Rooms.roomsDictionary.Keys.Contains(parametersAction[0]))
+        if ((Rooms.Rooms.roomsDictionary.Keys.Contains(parametersAction[0]) && (parametersAction[0] == room.GetCurrentRoom())))
         {
             ReserveRoutes.SetReserveRoute(this);
         }

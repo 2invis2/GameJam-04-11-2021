@@ -5,6 +5,7 @@ using System.Linq;
 using Assets.Scripts.FeatureStorages;
 using Attack;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RoomsRestrictions : MonoBehaviour
 {
@@ -19,9 +20,12 @@ public class RoomsRestrictions : MonoBehaviour
     {
         hasAttacker = gameObject.TryGetComponent(out Attacker att);
         _attacker = att;
-        hasRange = _attacker.attacks.Exists(x => x.attackType == AttackType.RANGE);
-        hasMelee = _attacker.attacks.Exists(x => x.attackType == AttackType.MELLEE);
-        hasMagic = _attacker.attacks.Exists(x => x.attackType == AttackType.MAGIC);
+        if (hasAttacker)
+        {
+            hasRange = _attacker.attacks.Exists(x => x.attackType == AttackType.RANGE);
+            hasMelee = _attacker.attacks.Exists(x => x.attackType == AttackType.MELLEE);
+            hasMagic = _attacker.attacks.Exists(x => x.attackType == AttackType.MAGIC);
+        }
     }
 
     public void OnRoomChange(string newRoom)
@@ -54,6 +58,16 @@ public class RoomsRestrictions : MonoBehaviour
                     restore += SwitchMagicEnabled;
                 }
             }
+
+            if (FeatureStorageRooms.Instance.GetByName(("RestrictedAccess" + newRoom)).IsEnable)
+            {
+                ReserveRoutes.SetReserveRoute(GetComponent<EnemyBase>());
+                if (TryGetComponent(out EnemyChaser chaser))
+                {
+                    chaser.Unchase();
+                }
+            }
+
         }
     }
 
@@ -76,7 +90,7 @@ public class RoomsRestrictions : MonoBehaviour
     {
         var index = _attacker.attacks.FindIndex(x => x.attackType == attackType);
         var att = _attacker.attacks[index];
-        _attacker.attacks[index] = new Attack.Attack(att.attackType, att.projectile, att.range, !att.isEnable);
+        _attacker.attacks[index] = new Attack.Attack(att.form, att.attackType, att.projectile, att.range, !att.isEnable);
     }
     
 

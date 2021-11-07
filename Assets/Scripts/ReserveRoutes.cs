@@ -12,7 +12,7 @@ public class ReserveRoutes : PseudoSingletonMonoBehaviour<ReserveRoutes>
 
     void Awake()
     {
-        Invoke(nameof(Test), 5f);
+        Invoke(nameof(Test), 2f);
         reservs = reservsInspector;
     }
 
