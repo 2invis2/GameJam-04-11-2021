@@ -26,5 +26,12 @@ namespace Assets.Scripts.FeatureStorages
             return instance.Features.Where(x => x.IsEnable == isEnable && x.IsAvailable == isAvailable);
         }
 
+        public static readonly Dictionary<string, IEnumerable<ActionFeature>> KnownActionFeatures = new Dictionary<string, IEnumerable<ActionFeature>>
+            {
+                { nameof(FeatureStorageEnemy), FeatureStorageEnemy.Features },
+                { nameof(FeatureStorageEnv), FeatureStorageEnv.Features },
+                { nameof(FeatureStorageRooms), FeatureStorageRooms.Features },
+                { nameof(FeatureStorageProjectile), FeatureStorageEnemy.Features }
+            };
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.Scripts.FeatureStorages;
 using MurphyInc.Core.Model.Interfaces;
 using TMPro;
@@ -25,21 +26,8 @@ public class СhoiceNewLaws : MonoBehaviour
         }
         Debug.Log(laws.Count);
 
-        for (var i=0; i < countChoiceLaws; i++)
-        {
-            int rand;
-            do
-            {
-                rand = Random.Range(0, laws.Count - 1);
-            } while (Array.IndexOf(choicesLaws, laws[rand]) == -1);
-                
-            choicesLaws[i] = laws[rand];
-        }
-
-        for (int i = 0; i < countChoiceLaws; i++)
-        {
-            descriptionsChoicesLaws[i].text = choicesLaws[i].Description;
-        }
+        choicesLaws = laws.OrderBy(item => Random.value).Take(countChoiceLaws).ToArray();
+        choicesLaws.Select((x, i) => descriptionsChoicesLaws[i].text = x.Description);
     }
     
     public void SetChoiceLaw(int indexLaw)
