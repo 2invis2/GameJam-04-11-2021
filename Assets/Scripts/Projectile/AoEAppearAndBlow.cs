@@ -68,7 +68,6 @@ public class AoEAppearAndBlow : MonoBehaviour
 
         if (!other.gameObject.Equals(sender))
         {
-            Debug.Log(other);
             Finished();
         }
 
