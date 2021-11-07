@@ -19,7 +19,7 @@ namespace Assets.Scripts.FeatureStorages
         public static FeatureStorage Instance => instance;
 
         public static readonly ActionFeature ToiletNoMagic = new ActionFeature(name: nameof(ToiletNoMagic), description: "Запрет на магию в туалетах", isEnable: false);
-        public static readonly ActionFeature ChillNoMelee = new ActionFeature(name: nameof(ChillNoMelee), description: "Запрет на драки в комнате отдыха", isEnable: true);
+        public static readonly ActionFeature ChillNoMelee = new ActionFeature(name: nameof(ChillNoMelee), description: "Запрет на драки в комнате отдыха", isEnable: false);
         public static readonly ActionFeature OpenspaceNoRange = new ActionFeature(name: nameof(OpenspaceNoRange), description: "Запрет на стрельбу в оупенспейсе", isEnable: false);
 
         public static IEnumerable<ActionFeature> Features => _features;

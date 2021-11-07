@@ -6,6 +6,6 @@ public class PlayerHP : MonoBehaviour
 {
     public void ProjectileHit(GameObject killer)
     {
-        Debug.Log(killer.name + " murdered u");
+        Application.LoadLevel(2);
     }
 }

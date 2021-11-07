@@ -50,6 +50,6 @@ public class СhoiceNewLaws : MonoBehaviour
 
     private void StartGame()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
     }
 }

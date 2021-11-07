@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 429160292225668388}
   - component: {fileID: 1647116467646351680}
   - component: {fileID: 4072211651145206567}
+  - component: {fileID: 2514964488969147696}
   m_Layer: 0
   m_Name: EnemyPseudoBoss
   m_TagString: Untagged
@@ -257,7 +258,7 @@ NavMeshAgent:
   m_Radius: 0.4
   m_Speed: 5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 99
   m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -313,6 +314,18 @@ MonoBehaviour:
   movement: {fileID: 8938817236725988616}
   attacker: {fileID: 1647116467646351680}
   room: {fileID: 5535182737945889118}
+--- !u!114 &2514964488969147696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072211651145206584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8bc9223a5f6944abddfb6bf141cd52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4036282501711450593
 PrefabInstance:
   m_ObjectHideFlags: 0
