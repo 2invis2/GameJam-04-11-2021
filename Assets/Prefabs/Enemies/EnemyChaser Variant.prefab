@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5009197284091842491, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8715581880755458464, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: moveSpeed
       value: 2
@@ -118,6 +122,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detector: {fileID: 1042779928957506418}
   movement: {fileID: 5401745404526863684}
-  attacker: {fileID: 0}
+  attacker: {fileID: 4367800829389349715}
   room: {fileID: 8803199605136118034}
-  chaseSpeed: 8
+  chaseSpeed: 4.5
+--- !u!114 &4367800829389349715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042779928957506420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCD: 0.5
+  cdLeft: 0
+  attacks:
+  - form: 1
+    attackType: 0
+    range: 3
+    isEnable: 1
+    projectile: {fileID: 516834748565652007, guid: b26b69defa77aa3439a161285254c2c7, type: 3}
