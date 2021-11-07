@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Table
+  - Projectile
   - Walls
   - Chairs
   - Toilet

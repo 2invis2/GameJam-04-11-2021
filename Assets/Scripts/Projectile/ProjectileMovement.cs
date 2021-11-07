@@ -31,7 +31,7 @@ namespace Projectile
                 Finished();
             }
 
-            if (!other.gameObject.Equals(sender))
+            if (!other.gameObject.Equals(sender) && !other.gameObject.CompareTag("Projectile"))
             {
                 Debug.Log(other);
                 Finished();

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2487479020963800709}
   m_Layer: 0
   m_Name: AoEMagic
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +53,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6cf09b9d8a451164fa4acf26fcdfc5cf, type: 3}
   spriteDanger: {fileID: 21300000, guid: 865d915432369f44a8fc0a8893655180, type: 3}
   zoneCollider: {fileID: 2487479020963800709}
-  radius: 1.49
   sender: {fileID: 0}
 --- !u!212 &7024559420317979725
 SpriteRenderer:
