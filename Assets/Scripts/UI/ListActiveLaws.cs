@@ -14,12 +14,7 @@ public class ListActiveLaws : MonoBehaviour
         UpdateListActiveLaws();
     }
 
-    void Update()
-    {
-        UpdateListActiveLaws();
-    }
-
-    private void UpdateListActiveLaws()
+    public void UpdateListActiveLaws()
     {
         string listLaws = "";
         
