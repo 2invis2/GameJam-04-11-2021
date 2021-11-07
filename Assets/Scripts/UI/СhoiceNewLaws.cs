@@ -44,7 +44,7 @@ public class СhoiceNewLaws : MonoBehaviour
         if (choiceLaw != null)
         {
             choiceLaw.IsEnable = true;
-            Invoke(nameof(StartGame), 5.0f);
+            Invoke(nameof(StartGame), 0.1f);
         }
     }
 
