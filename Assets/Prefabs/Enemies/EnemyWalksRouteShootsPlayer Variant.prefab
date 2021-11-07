@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5009197284091842491, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: avoidancePriority
-      value: 99
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6059738519706156417, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: m_audioClip

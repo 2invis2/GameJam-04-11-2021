@@ -117,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3954507984125408345, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: avoidancePriority
-      value: 99
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}

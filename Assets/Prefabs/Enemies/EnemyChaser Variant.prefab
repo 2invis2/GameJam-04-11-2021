@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009197284091842491, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: avoidancePriority
-      value: 99
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 8715581880755458464, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: moveSpeed
