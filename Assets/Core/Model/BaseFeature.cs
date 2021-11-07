@@ -10,7 +10,7 @@ namespace MurphyInc.Core.Model
 
         public BaseFeature(string name, string description, bool isEnable = false, params string[] actionParams)
         {
-            IsEnable = isEnable;
+            _isEnable = isEnable;
             _name = name;
             _description = description;
             _actionParams = actionParams;

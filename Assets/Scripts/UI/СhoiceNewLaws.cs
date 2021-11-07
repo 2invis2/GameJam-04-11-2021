@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.FeatureStorages;
+using MurphyInc.Core.Model;
 using MurphyInc.Core.Model.Interfaces;
 using TMPro;
 using UnityEngine;
@@ -10,10 +11,10 @@ using Random = UnityEngine.Random;
 
 public class СhoiceNewLaws : MonoBehaviour
 {
-    private List<IFeature> laws = new List<IFeature>();
+    private List<ActionFeature> laws = new List<ActionFeature>();
     private static int countChoiceLaws = 3;
-    private IFeature[] choicesLaws = new IFeature[countChoiceLaws];
-    private IFeature choiceLaw;
+    private ActionFeature[] choicesLaws = new ActionFeature[countChoiceLaws];
+    private ActionFeature choiceLaw;
     [SerializeField]
     private TextMeshProUGUI[] descriptionsChoicesLaws;
 
@@ -22,8 +23,7 @@ public class СhoiceNewLaws : MonoBehaviour
         laws.Clear();
         foreach (var law in FeatureStorageMain.GetFeatures(false, true))
         {
-            laws.Add(law);
-            
+            laws.Add(law);            
         }
 
         choicesLaws = laws.OrderBy(item => Random.value).Take(countChoiceLaws).ToArray();

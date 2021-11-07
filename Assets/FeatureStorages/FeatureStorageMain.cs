@@ -21,7 +21,7 @@ namespace Assets.Scripts.FeatureStorages
 
         public static IEnumerable<ActionFeature> Features => instance.Features;
 
-        public static IEnumerable<IFeature> GetFeatures(bool isEnable, bool isAvailable)
+        public static IEnumerable<ActionFeature> GetFeatures(bool isEnable, bool isAvailable)
         {
             return instance.Features.Where(x => x.IsEnable == isEnable && x.IsAvailable == isAvailable);
         }
