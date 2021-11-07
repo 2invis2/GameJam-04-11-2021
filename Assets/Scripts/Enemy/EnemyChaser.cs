@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using Assets.Scripts.FeatureStorages;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class EnemyChaser : EnemyBase
@@ -15,7 +18,7 @@ public class EnemyChaser : EnemyBase
         }
         else
         {
-            if (foundObjects.Count > 0) {
+            if ((foundObjects.Count > 0) && (!FeatureStorageRooms.Instance.GetByName(("RestrictedAccess"+room.GetCurrentRoom())).IsEnable)) {
                 isChasing = true;
                 //movement.SetBasicMovementType(BasicMovementType.TurnAndMove);
                 if (chaseSpeed != default) movement.MoveSpeed = chaseSpeed;
@@ -26,4 +29,12 @@ public class EnemyChaser : EnemyBase
             }
         }
     }
+
+    public void Unchase()
+    {
+        movement.SetTarget(transform);
+        isChasing = false;
+    }
+    
+    
 }
