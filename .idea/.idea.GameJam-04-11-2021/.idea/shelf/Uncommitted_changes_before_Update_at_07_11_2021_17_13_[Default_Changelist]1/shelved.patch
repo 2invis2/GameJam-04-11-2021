@@ -1,0 +1,15 @@
+Index: Assets/TextMesh Pro.meta
+===================================================================
+diff --git a/Assets/TextMesh Pro.meta b/Assets/TextMesh Pro.meta
+deleted file mode 100644
+--- a/Assets/TextMesh Pro.meta	(revision b95da0b6f22d5e88bde164d6cf3adb0d819de025)
++++ /dev/null	(revision b95da0b6f22d5e88bde164d6cf3adb0d819de025)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: f54d1bd14bd3ca042bd867b519fee8cc
+-folderAsset: yes
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 

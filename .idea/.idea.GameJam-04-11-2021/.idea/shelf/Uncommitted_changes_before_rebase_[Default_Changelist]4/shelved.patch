@@ -1,0 +1,18 @@
+Index: Assets/TextMesh Pro.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/TextMesh Pro.meta b/Assets/TextMesh Pro.meta
+deleted file mode 100644
+--- a/Assets/TextMesh Pro.meta	(revision c1f1aa78e1fa70bb591b21faf4dee44bbe0e384b)
++++ /dev/null	(revision c1f1aa78e1fa70bb591b21faf4dee44bbe0e384b)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: f54d1bd14bd3ca042bd867b519fee8cc
+-folderAsset: yes
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
