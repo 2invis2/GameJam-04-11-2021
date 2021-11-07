@@ -12,10 +12,12 @@ public class ChangeDetection : MonoBehaviour
     {
         dc = GetComponent<DetectorComponent>();
         baseDetection = dc.detectionRange;
-        FeatureStorageEnv.LesserFOV.callback+=OnCallbackLess;
-        FeatureStorageEnv.BiggerFOV.callback+=OnCallbackBig;
+        FeatureStorageEnv.LesserFOV.callback+= OnCallbackLess;
+        FeatureStorageEnv.BiggerFOV.callback += OnCallbackBig;
+        FeatureStorageEnv.LesserFOV.CallBackInvoke();
+        FeatureStorageEnv.BiggerFOV.CallBackInvoke();
     }
-    
+
     private void OnCallbackLess(string[] actionParams)
     {
         if (FeatureStorageEnv.LesserFOV.IsEnable)
@@ -32,5 +34,11 @@ public class ChangeDetection : MonoBehaviour
             dc.detectionRange = baseDetection * detectionChangeMultiplier;
             FeatureStorageEnv.LesserFOV.IsEnable = false;
         }
+    }
+
+    private void OnDestroy()
+    {
+        FeatureStorageEnv.LesserFOV.callback -= OnCallbackLess;
+        FeatureStorageEnv.BiggerFOV.callback -= OnCallbackBig;
     }
 }
