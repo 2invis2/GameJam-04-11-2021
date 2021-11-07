@@ -20,6 +20,8 @@ namespace Assets.Scripts.FeatureStorages
         public static ActionFeature GetByName(string name) => instance.GetByName(name);
 
         public static readonly ActionFeature SlidingTables = new ActionFeature(name: nameof(SlidingTables), description: "Столы скользят по полу", isEnable: false);
+        public static readonly ActionFeature ConcreteChairs = new ActionFeature(name: nameof(ConcreteChairs), description: "Стулья из бетона", isEnable: false);
+        public static readonly ActionFeature SlidingToilets = new ActionFeature(name: nameof(SlidingToilets), description: "Незакрепленные унитазы", isEnable: false);
         public static readonly ActionFeature LesserFOV = new ActionFeature(name: nameof(LesserFOV), description: "Плохая видимость", isEnable: false);
         public static readonly ActionFeature BiggerFOV = new ActionFeature(name: nameof(BiggerFOV), description: "Хорошая видимость", isEnable: false);
         public static readonly ActionFeature QuickDoor = new ActionFeature(name: nameof(QuickDoor), description: "Двери открываются быстрее", isEnable: false);
@@ -33,6 +35,8 @@ namespace Assets.Scripts.FeatureStorages
             new ActionFeature[]
             {
                 SlidingTables,
+                ConcreteChairs,
+                SlidingToilets,
                 LesserFOV,
                 BiggerFOV,
                 QuickDoor,

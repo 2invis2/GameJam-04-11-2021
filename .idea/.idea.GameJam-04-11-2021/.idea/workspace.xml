@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="" />
+    <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,9 +71,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" />
       <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFOV.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/DetectorComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ChangeDetection.cs" />
@@ -79,11 +83,13 @@
       <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" />
       <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Attack/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ReserveRoutes.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyChaser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/RoomsRestrictions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ReserveRoutes.cs" />
+      <option value="$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rooms/Rooms.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="20TGszwM6QxJEvebrpTb56wcygI" />
