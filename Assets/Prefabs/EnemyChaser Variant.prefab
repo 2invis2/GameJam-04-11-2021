@@ -71,6 +71,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8715581880755458471, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
   m_PrefabInstance: {fileID: 8541997367080633043}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8803199605136118034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 909861537204048833, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+  m_PrefabInstance: {fileID: 8541997367080633043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042779928957506420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9265e7ca61864429991431fcdcff0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5401745404526863684 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4358815431344383895, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
@@ -93,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f15b6a5fc1add94992b3f670a3e7c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &512094781981939920
+--- !u!114 &873377822227776732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,9 +113,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1042779928957506420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddecf790a5dac0049a07d0bd66a25543, type: 3}
+  m_Script: {fileID: 11500000, guid: f4e0d77257e50494e8038390ff3803e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   detector: {fileID: 1042779928957506418}
   movement: {fileID: 5401745404526863684}
   attacker: {fileID: 0}
+  room: {fileID: 8803199605136118034}
+  chaseSpeed: 8

@@ -194,17 +194,6 @@ Transform:
   m_Father: {fileID: 859628273}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &674169437 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1547404593805163630, guid: a945fda3061143e43a4be6440a4ea2d7, type: 3}
-  m_PrefabInstance: {fileID: 8959523485174435707}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143bb0ee3692bc746b105398cae60e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &674169440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8629014276152304972, guid: a945fda3061143e43a4be6440a4ea2d7, type: 3}
@@ -3718,7 +3707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-  - npc: {fileID: 674169437}
+  - npc: {fileID: 0}
     route: {fileID: 859628272}
   - npc: {fileID: 835125155951534032}
     route: {fileID: 698505288}
@@ -4137,7 +4126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 10
-  tagToDetect: Player
 --- !u!4 &835125155951534026
 Transform:
   m_ObjectHideFlags: 0
@@ -4216,7 +4204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &835125155951534032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4232,6 +4220,7 @@ MonoBehaviour:
   detector: {fileID: 835125155951534025}
   movement: {fileID: 5699478943782709759}
   attacker: {fileID: 2724159625779584439}
+  room: {fileID: 9206897314829950377}
 --- !u!4 &835125156918680556
 Transform:
   m_ObjectHideFlags: 0
@@ -4581,7 +4570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 10
-  tagToDetect: Player
 --- !u!4 &6234319582398987050
 Transform:
   m_ObjectHideFlags: 0
@@ -4651,6 +4639,7 @@ MonoBehaviour:
   detector: {fileID: 6234319582398987049}
   movement: {fileID: 6234319582398987056}
   attacker: {fileID: 0}
+  room: {fileID: 0}
 --- !u!1 &6234319582398987055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4960,3 +4949,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomName: 
   updateRatio: 0.25
+  _restrictions: {fileID: 0}
