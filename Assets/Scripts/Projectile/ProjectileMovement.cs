@@ -20,20 +20,21 @@ namespace Projectile
 
         private void Finished()
         {
-            Destroy(gameObject);
+            Dead();
         }
 
         private void OnTriggerStay2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                transform.GetComponentInChildren<AudioControl>().OnDie();
                 other.GetComponent<PlayerHP>().ProjectileHit(sender);
                 Finished();
             }
 
             if (!other.gameObject.Equals(sender) && !other.gameObject.CompareTag("Projectile"))
             {
-                Debug.Log(other);
+                transform.GetComponentInChildren<AudioControl>().OnDie();
                 Finished();
             }
                 
@@ -42,6 +43,11 @@ namespace Projectile
         private void Movement()
         {
             transform.position += transform.up * updateRatio * speed; 
+        }
+
+        private void Dead()
+        {
+            Destroy(gameObject);
         }
     }
 }

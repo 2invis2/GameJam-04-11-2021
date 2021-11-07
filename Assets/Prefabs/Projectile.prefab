@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8678397225034764421}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,3 +139,81 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &2910876617248365418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1362479267246782031}
+    m_Modifications:
+    - target: {fileID: 2120289732148351363, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b139dc788bcfd24dbfc1eea8cb9d7f6, type: 3}
+    - target: {fileID: 2120289732148351363, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5308813423773104678, guid: f52beb85ee1288c4eb19590ab9a0efd2, type: 2}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.05339
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34.30921
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.76706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764109053577527779, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631880853226741518, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 57575bb18442610419bce6651c9279be, type: 3}
+    - target: {fileID: 8631880853226741518, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2583527703066596921, guid: f52beb85ee1288c4eb19590ab9a0efd2, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+--- !u!4 &8678397225034764421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5767526278353292271, guid: d0a6cae7574bfc54f9dabfe57929808b, type: 3}
+  m_PrefabInstance: {fileID: 2910876617248365418}
+  m_PrefabAsset: {fileID: 0}
