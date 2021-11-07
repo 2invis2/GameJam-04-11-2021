@@ -27,8 +27,10 @@ namespace MurphyInc.Core.Model
             }
             set
             {
-                _isEnable = value;
-                callback?.Invoke(_actionParams);
+                if (_isEnable != value)
+                {
+                    callback?.Invoke(_actionParams);
+                }
             }
         }
 
@@ -39,9 +41,9 @@ namespace MurphyInc.Core.Model
         {
             get
             {
-                if (availableEvent != null)
+                if (AvailableFunc != null)
                     return true;
-                return availableEvent();
+                return AvailableFunc();
             }
         }
 
@@ -67,7 +69,7 @@ namespace MurphyInc.Core.Model
         public override int GetHashCode() => Name.GetHashCode();
 
         public event ActionFeatureAction callback;
-        private readonly Func<bool> availableEvent;
+        public Func<bool> AvailableFunc;
         private readonly string _name;
         private readonly string _description;
         private bool _isEnable;
