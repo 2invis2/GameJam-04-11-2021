@@ -9,7 +9,9 @@ public class Win : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
+        {
             exit.SetActive(true);
-        Destroy(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }

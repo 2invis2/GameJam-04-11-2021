@@ -9,7 +9,7 @@ public class Exit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Application.LoadLevel(0);
+            Application.LoadLevel(3);
         }
     }
 }
