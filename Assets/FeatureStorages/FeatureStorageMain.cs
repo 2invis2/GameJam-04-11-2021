@@ -8,7 +8,7 @@ namespace Assets.Scripts.FeatureStorages
 {
     public sealed class FeatureStorageMain
     {
-        private static readonly FeatureStorage instance;
+        private static readonly FeatureStorage instance = new FeatureStorage(new ActionFeature[] { });
 
         static FeatureStorageMain()   
         {
@@ -17,7 +17,7 @@ namespace Assets.Scripts.FeatureStorages
 
         private FeatureStorageMain() { }
 
-        public static FeatureStorage Instance => new FeatureStorage(new ActionFeature[] {});
+        public static FeatureStorage Instance => instance;
 
         public static IEnumerable<ActionFeature> Features => instance.Features;
 
