@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6059738519706156417, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 57575bb18442610419bce6651c9279be, type: 3}
+    - target: {fileID: 6059738519706156417, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -434787616459850777, guid: f52beb85ee1288c4eb19590ab9a0efd2, type: 2}
     - target: {fileID: 6577787765109551082, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -63,6 +71,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWalksRouteShootsPlayer Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9046126927002009178, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b8684574bed916458beba4cc0491209, type: 3}
+    - target: {fileID: 9046126927002009178, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046126927002009178, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5610291520795021203, guid: f52beb85ee1288c4eb19590ab9a0efd2, type: 2}
     m_RemovedComponents:
     - {fileID: 8715581880755458470, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
@@ -71,6 +91,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8715581880755458471, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
   m_PrefabInstance: {fileID: 8315054952558427106}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9206897314475436067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 909861537204048833, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
+  m_PrefabInstance: {fileID: 8315054952558427106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835125155597019717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9265e7ca61864429991431fcdcff0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5699478943596092533 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4358815431344383895, guid: fb8ddb9d2db8dd049b4f564fa6372588, type: 3}
@@ -128,3 +159,4 @@ MonoBehaviour:
   detector: {fileID: 835125155597019715}
   movement: {fileID: 5699478943596092533}
   attacker: {fileID: 2724159625462818877}
+  room: {fileID: 9206897314475436067}

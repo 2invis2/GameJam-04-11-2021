@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWalksRouteShootsStars
       objectReference: {fileID: 0}
+    - target: {fileID: 1076165621719500216, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076165621719500216, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2724159625462818877, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: attacks.Array.size
       value: 1
