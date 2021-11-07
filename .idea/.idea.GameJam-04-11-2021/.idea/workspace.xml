@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile/AoEAppearAndBlow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile/AoEAppearAndBlow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_19_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_19_58__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_05__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_11__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_11__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_18_56__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_18_56__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_19_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_19_54__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_20_00__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_20_00__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_06__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_06__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Intro.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Intro.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,40 +47,67 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/Attack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/Attacker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChangeDetection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/AttackType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerFOV.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/EnemyAttacks.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/Grid.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attack/IAttacker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/ProjectileMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintPaletteClipboard.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/unityprojects/MurphyInc/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scripts/Enemy/EnemyChaser.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChangeDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerFOV.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/UI/Rule1.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scripts/Enemy/EnemyBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemySample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/unityprojects/MurphyInc/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/UI/Canvas.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/BaseFeature.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DetectorComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scripts/Enemy/EnemyBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridPaintPaletteClipboard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageEnv.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DetectorComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51c9fc2d1be048cfa2dd679deaa7d4f717a300/95/a4afaf76/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Envt/Sliding.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/unityprojects/MurphyInc/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/unityprojects/MurphyInc/GameJam-04-11-2021/Assets/Core/Model/BaseFeature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
