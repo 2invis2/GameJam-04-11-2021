@@ -12,12 +12,13 @@ namespace Attack
         public bool isEnable;
         public GameObject projectile;
 
-        //public Attack(AttackType attackType, GameObject projectile, float range, bool isEnable)
-        //{
-        //    this.attackType = attackType;
-        //    this.projectile = projectile;
-        //    this.range = range;
-        //    this.isEnable = isEnable;
-        //}
+        public Attack(AttackForm form, AttackType attackType, GameObject projectile, float range, bool isEnable)
+        {
+            this.attackType = attackType;
+            this.projectile = projectile;
+            this.range = range;
+            this.isEnable = isEnable;
+            this.form = form;
+        }
     }
 }
