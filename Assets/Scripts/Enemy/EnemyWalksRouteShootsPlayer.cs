@@ -25,8 +25,8 @@ public class EnemyWalksRouteShootsPlayer : EnemyBase
             attackCDLeft -= Time.deltaTime;
             return false;
         }
-        attacker.Attack(target.transform.position - transform.position);
         attackCDLeft = attackCD;
+        attacker.Attack(target.transform.position);
         return true;
     }
     protected override void GetParts()
