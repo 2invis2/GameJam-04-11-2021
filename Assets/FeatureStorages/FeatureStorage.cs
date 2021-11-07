@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MurphyInc.Core.Model;
 using MurphyInc.Core.Model.Interfaces;
@@ -13,6 +12,15 @@ namespace Assets.Scripts.FeatureStorages
             _features = features
                 .Distinct(new BaseFeatureComparer<ActionFeature>())
                 .ToDictionary(x => x.Name, value => value);
+        }
+
+        public void AddRange(IEnumerable<ActionFeature> actionFeature)
+        {
+            var features = actionFeature.Distinct(new BaseFeatureComparer<ActionFeature>());
+            foreach (var item in features)
+            {
+                TryAddActionFeature(item);
+            }
         }
 
         public bool TryAddActionFeature(ActionFeature actionFeature)
