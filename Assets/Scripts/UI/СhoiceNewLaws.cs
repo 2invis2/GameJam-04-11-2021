@@ -19,15 +19,19 @@ public class СhoiceNewLaws : MonoBehaviour
 
     void Start()
     {
+        laws.Clear();
         foreach (var law in FeatureStorageMain.GetFeatures(false, true))
         {
             laws.Add(law);
             
         }
-        Debug.Log(laws.Count);
 
         choicesLaws = laws.OrderBy(item => Random.value).Take(countChoiceLaws).ToArray();
-        choicesLaws.Select((x, i) => descriptionsChoicesLaws[i].text = x.Description);
+        
+        for(var i = 0; i<countChoiceLaws; i++)
+        {
+            descriptionsChoicesLaws[i].SetText(choicesLaws[i].Description);
+        }
     }
     
     public void SetChoiceLaw(int indexLaw)
