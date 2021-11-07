@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_19_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_19_58__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_05__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_11__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_20_11__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_17_13__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_18_56__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_18_56__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_19_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_19_54__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_20_00__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_20_00__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_06__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_06__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Intro.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Intro.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_30__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_30__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_47__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_47__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +21,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -89,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDirector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -199,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636190680058</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1636297349129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636297349129</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix Intro">
+      <created>1636301375833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636301375833</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +231,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="fix prefab Enemy" />
     <MESSAGE value="update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="fix Intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Intro" />
   </component>
 </project>
