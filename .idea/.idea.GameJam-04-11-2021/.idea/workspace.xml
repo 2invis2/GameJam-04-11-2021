@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3b4386-416b-4727-89ce-e3beebde1e30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2021_21_47__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_30__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_30__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_47__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2021_21_47__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-04-11-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FinalScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FinalScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +52,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerFOV.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/CorridorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scenes/IntroScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/TextMesh Pro.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Prefabs/UI/Rule1.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageRooms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scripts/Enemy/EnemyBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemySample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FeatureStorages/FeatureStorageEnemy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,8 +72,8 @@
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/Scripts/Enemy/EnemyBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://G:/Projects/GameJam-04-11-2021/GameJam-04-11-2021/Assets/FeatureStorages/FeatureStorageMain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07c89f7520694139991332d3cf930d4813bc00/5a/50270211/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDirector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Model/Interfaces/IFeatureStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Interfaces/Generic/ComponentSingleton.cs" root0="FORCE_HIGHLIGHTING" />
