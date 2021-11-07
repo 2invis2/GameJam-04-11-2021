@@ -18,7 +18,7 @@ namespace MurphyInc.Core.Model
 
         public void CallBackInvoke()
         {
-            if(needCallBack)
+            if(IsEnable)
             {
                 callback?.Invoke(_actionParams);
                 needCallBack = false;
