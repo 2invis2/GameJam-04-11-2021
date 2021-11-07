@@ -1,4 +1,5 @@
 #define TELEPORT_IF_CLOSE
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using Assets.Scripts.FeatureStorages;
 using MurphyInc.Core.Model;
 using Attack;
 using Rooms;
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -123,6 +125,7 @@ public class EnemyBase : MonoBehaviour
             var newActionFeature = new ActionFeature("RestrictedAccess"+item.Key, "Врагам не доступна комната "+item.Value, false, new string[]{item.Key});
             newActionFeature.callback += OnRestrictedAccessCallback;
             featureStorageRooms.TryAddActionFeature(newActionFeature);
+            newActionFeature.CallBackInvoke();
         }
     }
 
@@ -131,6 +134,15 @@ public class EnemyBase : MonoBehaviour
         if ((Rooms.Rooms.roomsDictionary.Keys.Contains(parametersAction[0]) && (parametersAction[0] == room.GetCurrentRoom())))
         {
             ReserveRoutes.SetReserveRoute(this);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var item in Rooms.Rooms.roomsDictionary)
+        {
+            var newActionFeature = FeatureStorageMain.Instance.GetByName("RestrictedAccess"+item.Key);
+            newActionFeature.callback -= OnRestrictedAccessCallback;
         }
     }
 }

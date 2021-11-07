@@ -49,7 +49,6 @@ namespace Envt
         private void RbSettings(bool isDynamic)
         {
             rb.bodyType = isDynamic ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
-            Debug.Log(rb.bodyType);
         }
     }
 }

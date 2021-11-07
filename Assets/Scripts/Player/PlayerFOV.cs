@@ -18,6 +18,8 @@ public class PlayerFOV : MonoBehaviour
         cameraCurr.orthographicSize = cameraBaseSize;
         FeatureStorageEnv.LesserFOV.callback+=OnCallbackLess;
         FeatureStorageEnv.BiggerFOV.callback+=OnCallbackBig;
+        FeatureStorageEnv.LesserFOV.CallBackInvoke();
+        FeatureStorageEnv.BiggerFOV.CallBackInvoke();
     }
 
     private void OnCallbackLess(string[] actionParams)
@@ -36,5 +38,11 @@ public class PlayerFOV : MonoBehaviour
             cameraCurr.orthographicSize = cameraBaseSize * FOVMultiplier;
             FeatureStorageEnv.LesserFOV.IsEnable = false;
         }
+    }
+
+    private void OnDestroy()
+    {
+        FeatureStorageEnv.LesserFOV.callback-=OnCallbackLess;
+        FeatureStorageEnv.BiggerFOV.callback-=OnCallbackBig;
     }
 }
