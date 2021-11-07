@@ -77,6 +77,10 @@ public class EnemyBase : MonoBehaviour
         for (int i = 0; i < foundObjects.Count; i++) Debug.DrawLine(transform.position, foundObjects[i].transform.position,Color.red);
 #endif
     }
+    public void SetDetectionPredicate(System.Predicate<GameObject> predicate) {
+        if (detector == null) return;
+        detector.SetDetectionClause(predicate);
+    }
     void PrepareDetector()
     {
         if (detector == null)
