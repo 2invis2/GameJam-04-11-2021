@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835125155597019717, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: m_Name
-      value: EnemyWalksRouteShootsPlayer Variant
+      value: EnemyWalksRouteShootsStars
       objectReference: {fileID: 0}
     - target: {fileID: 2724159625462818877, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: attacks.Array.size
@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: attacks.Array.data[1].projectile
       value: 
       objectReference: {fileID: 1095706929624437133, guid: 6ce830654f1e84f469d95e01f4184029, type: 3}
+    - target: {fileID: 2895248808858031112, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8b1da77dbafc174fa084fa686cb10e2, type: 3}
     - target: {fileID: 3954507984125408345, guid: 8056a1cf8cb298b44a2ac0be921718f6, type: 3}
       propertyPath: m_Speed
       value: 3
