@@ -3,17 +3,26 @@ using MurphyInc.Core.Model.Interfaces;
 using System.Collections.Generic;
 
 namespace MurphyInc.Core.Model
-{   
+{
     public class BaseFeature : IFeature
     {
         public delegate void ActionFeatureAction(string[] actionParams);
 
         public BaseFeature(string name, string description, bool isEnable = false, params string[] actionParams)
         {
-            _isEnable = isEnable;
+            IsEnable = isEnable;
             _name = name;
             _description = description;
             _actionParams = actionParams;
+        }
+
+        public void CallBackInvoke()
+        {
+            if(needCallBack)
+            {
+                callback?.Invoke(_actionParams);
+                needCallBack = false;
+            }
         }
 
         /// <summary>
@@ -28,9 +37,11 @@ namespace MurphyInc.Core.Model
             set
             {
                 _isEnable = value;
-                callback?.Invoke(_actionParams);
+                needCallBack = true;
             }
         }
+
+        private bool needCallBack = false;
 
         /// <summary>
         /// Доступно ли правило
