@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Assets.Scripts.FeatureStorages;
 using MurphyInc.Core.Model;
+using Attack;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -13,6 +14,7 @@ public class EnemyBase : MonoBehaviour
 {
     [SerializeField] protected DetectorComponent detector;
     [SerializeField] protected MovementComponent movement;
+    [SerializeField] protected Attacker attacker;
 
     protected FeatureStorage featureStorage = FeatureStorageEnemy.Instance;
 
@@ -41,6 +43,7 @@ public class EnemyBase : MonoBehaviour
         GetParts();
         if (detector != null) { SetDetection("Player", DetectionResult); }
         if (movement != null) { movement.OnTargetReached = MovementCompleteResult; }
+        if (attacker != null) { detector.OnDetection += Attack; }
     }
 
     #region Movement
@@ -83,6 +86,11 @@ public class EnemyBase : MonoBehaviour
         }
     }
     #endregion
+    #region Attack
+    void Attack(List<GameObject> detected) {
+        if (detected.Count > 0) attacker.TryAttack(detected[0].transform.position);
+    }
+    #endregion
 #if UNITY_EDITOR
     protected virtual void OnValidate() {
         GetParts();
@@ -92,5 +100,6 @@ public class EnemyBase : MonoBehaviour
     {
         if (movement == null) movement = GetComponent<MovementComponent>();
         if (detector == null) detector = GetComponent<DetectorComponent>();
+        if (attacker == null) attacker = GetComponent<Attacker>();
     }
 }

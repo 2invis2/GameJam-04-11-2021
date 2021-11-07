@@ -101,10 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fa82e82af94ce7a8fd92af2a784173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCD: 1
+  cdLeft: 0
   attacks:
   - form: 1
     attackType: 1
-    range: 5
+    range: 10
     isEnable: 1
     projectile: {fileID: 2165285105057103878, guid: e790cad36bc62b24cb39222c031e3dc5, type: 3}
 --- !u!114 &7579526716794549090
@@ -122,5 +124,3 @@ MonoBehaviour:
   detector: {fileID: 835125155597019715}
   movement: {fileID: 5699478943596092533}
   attacker: {fileID: 2724159625462818877}
-  attackCD: 1
-  attackCDLeft: 0

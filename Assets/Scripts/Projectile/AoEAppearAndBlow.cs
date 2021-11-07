@@ -12,7 +12,8 @@ public class AoEAppearAndBlow : MonoBehaviour
     [SerializeField] Sprite spriteDanger;
     [SerializeField] Collider2D zoneCollider;
     int index = 0;
-    [SerializeField] float radius = 1.49f;
+    //TODO make it use radius
+    //[SerializeField] float radius = 1.49f;
     public GameObject sender;
     private void Start()
     {
