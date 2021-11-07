@@ -31,8 +31,7 @@ namespace Assets.Scripts.FeatureStorages
                 { nameof(FeatureStorageEnemy), FeatureStorageEnemy.Features },
                 { nameof(FeatureStorageEnv), FeatureStorageEnv.Features },
                 { nameof(FeatureStorageRooms), FeatureStorageRooms.Features },
-                { nameof(FeatureStorageProjectile), FeatureStorageEnemy.Features },
-                { nameof(FeatureStorageEnemy), FeatureStorageEnemy.Features },
+                { nameof(FeatureStorageProjectile), FeatureStorageEnemy.Features }
             };
     }
 }
